@@ -279,6 +279,25 @@
             </Button>
         </Grid>
 
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="MenuBackground/sandpng.png"/>
+                </StackPanel.Background>
+                <Label  Content="{Binding ElementName=Volume, Path=Value}" ContentStringFormat=" {0} " Margin="20 0 0 0"
+                        FontFamily="Arial" FontWeight="Bold" Foreground="Black"></Label>
+                <Slider  x:Name="Volume" HorizontalAlignment="Right" Orientation="Vertical" Height="100" Margin="0 0 25 0"
+                Minimum="0" Maximum="100" Value="25" ValueChanged="Volume_ValueChanged" IsSnapToTickEnabled="True" >
+                </Slider>
+                <ToggleButton  Margin="0 0 10 0" Grid.Row="1" Style="{StaticResource ToggleButtonStyle1}" IsChecked="True" Checked="ToggleButton_Checked" Unchecked="IsMaxim_Unchecked"/>
+            </StackPanel>
+        </Grid>
+
 
     </Grid>
 </Window>
