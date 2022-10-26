@@ -67,5 +67,9 @@ namespace GUI_2022_23_01_UHPYQ8
             ChangeContentToHighscore();
         }
 
+        private void IsMaxim_Unchecked(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Normal;
+        }
     }
 }
