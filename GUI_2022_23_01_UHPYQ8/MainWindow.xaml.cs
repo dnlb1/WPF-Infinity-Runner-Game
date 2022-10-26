@@ -56,7 +56,10 @@ namespace GUI_2022_23_01_UHPYQ8
             myDisplay.player.Stop();
             ChangeToGame();
         }
-
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
 
     }
 }
