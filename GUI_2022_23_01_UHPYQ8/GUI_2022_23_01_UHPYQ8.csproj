@@ -10,6 +10,16 @@
     <None Remove="Cursors\Brush.ani" />
     <None Remove="Cursors\minato_normal_select_animated.ani" />
     <None Remove="Cursors\minato_shuriken_busy.ani" />
+    <None Remove="Images\MainMenuHud\exit2.png" />
+    <None Remove="Images\MainMenuHud\ExitWhite.png" />
+    <None Remove="Images\MainMenuHud\MenuBack.png" />
+    <None Remove="Images\MainMenuHud\resume2.png" />
+    <None Remove="Images\MainMenuHud\resumetry.png" />
+    <None Remove="Images\MainMenuHud\volumeoff.png" />
+    <None Remove="Images\MainMenuHud\volumeon.png" />
+    <None Remove="Images\MainMenuHud\windowmode2.png" />
+    <None Remove="Images\MainMenuHud\windowmodewhite.png" />
+    <None Remove="Images\SandVillage.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +30,36 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Cursors\minato_shuriken_busy.ani">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\MainMenuHud\exit2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\MainMenuHud\ExitWhite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\MainMenuHud\MenuBack.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\MainMenuHud\resume2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\MainMenuHud\resumetry.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\MainMenuHud\volumeoff.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\MainMenuHud\volumeon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\MainMenuHud\windowmode2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\MainMenuHud\windowmodewhite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SandVillage.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
