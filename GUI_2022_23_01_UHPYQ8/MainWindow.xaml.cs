@@ -41,6 +41,12 @@ namespace GUI_2022_23_01_UHPYQ8
             Gm = new Game(this);
             this.Content = Gm;
         }
+        public void ChangeContentToHighscore()
+        {
+            Highscore Hw = new Highscore(this);
+            this.Content = Hw;
+        }
+
 
     }
 }

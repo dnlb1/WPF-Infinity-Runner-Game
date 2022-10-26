@@ -20,7 +20,8 @@ namespace GUI_2022_23_01_UHPYQ8
     /// </summary>
     public partial class Highscore : Page
     {
-        public Highscore()
+        MainWindow window;
+        public Highscore(MainWindow window)
         {
             InitializeComponent();
         }
