@@ -18,6 +18,10 @@ namespace GUI_2022_23_01_UHPYQ8.Render
             this.size = size;
             InvalidateVisual();
         }
+        public void VolumeChanger(double Volume)
+        {
+            player.Volume = Volume;
+        }
 
         protected override void OnRender(DrawingContext drawingContext)
         {
