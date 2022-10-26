@@ -20,7 +20,7 @@ namespace GUI_2022_23_01_UHPYQ8
     /// </summary>
     public partial class MainWindow : Window
     {
-        Game gm;
+        Game Gm;
         private object content;
         public double volume;
         public MainWindow()
@@ -31,6 +31,10 @@ namespace GUI_2022_23_01_UHPYQ8
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             myDisplay.Resize(new Size(myGrid.ActualWidth, myGrid.ActualHeight));
+            //if (Gm != null)
+            //{
+            //    Gm.Window_SizeChanged(sender, e);
+            //}
         }
     }
 }
