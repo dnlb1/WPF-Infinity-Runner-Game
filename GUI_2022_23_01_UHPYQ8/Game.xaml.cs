@@ -20,7 +20,7 @@ namespace GUI_2022_23_01_UHPYQ8
     /// </summary>
     public partial class Game : Page
     {
-        public Game()
+        public Game(MainWindow w)
         {
             InitializeComponent();
         }

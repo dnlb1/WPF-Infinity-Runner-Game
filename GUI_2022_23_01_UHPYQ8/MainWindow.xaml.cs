@@ -36,5 +36,11 @@ namespace GUI_2022_23_01_UHPYQ8
             //    Gm.Window_SizeChanged(sender, e);
             //}
         }
+        public void ChangeToGame()
+        {
+            Gm = new Game(this);
+            this.Content = Gm;
+        }
+
     }
 }
