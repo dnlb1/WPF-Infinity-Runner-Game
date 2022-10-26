@@ -20,6 +20,21 @@
     <None Remove="Images\MainMenuHud\windowmode2.png" />
     <None Remove="Images\MainMenuHud\windowmodewhite.png" />
     <None Remove="Images\SandVillage.png" />
+    <None Remove="MenuBackground\ecset1.png" />
+    <None Remove="MenuBackground\ecset2.png" />
+    <None Remove="MenuBackground\Kunai5.png" />
+    <None Remove="MenuBackground\MenuExit.png" />
+    <None Remove="MenuBackground\MenuHighscore.png" />
+    <None Remove="MenuBackground\MenuStart.png" />
+    <None Remove="MenuBackground\MenuWaiting.png" />
+    <None Remove="MenuBackground\MiniHubBackground.png" />
+    <None Remove="MenuBackground\NameBackground.png" />
+    <None Remove="MenuBackground\NameBck.jpg" />
+    <None Remove="MenuBackground\off.png" />
+    <None Remove="MenuBackground\on.png" />
+    <None Remove="MenuBackground\Ranglist.png" />
+    <None Remove="MenuBackground\sandhub.jpg" />
+    <None Remove="MenuBackground\sandpng.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -60,6 +75,51 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\SandVillage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\ecset1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\ecset2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\Kunai5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\MenuExit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\MenuHighscore.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\MenuStart.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\MenuWaiting.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\MiniHubBackground.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\NameBackground.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\NameBck.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\off.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\on.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\Ranglist.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\sandhub.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\sandpng.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
