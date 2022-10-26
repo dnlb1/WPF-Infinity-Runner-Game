@@ -259,6 +259,24 @@
 
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
+            <Button Style="{DynamicResource ButtonStart}" Grid.Row="1" Margin="10" FontSize="20" Click="Button_Click"
+                    BorderBrush="Transparent" BorderThickness="0" Cursor="Cursors/minato_shuriken_busy.ani">
+                <Button.Background>
+                    <ImageBrush ImageSource="MenuBackground/MenuStart.png"/>
+                </Button.Background>
+            </Button>
+            <Button Style="{DynamicResource HighscoreButton}" Grid.Row="2" Margin="10" FontSize="20" Click="Button_Click_2"
+                    BorderBrush="Transparent" BorderThickness="0" Cursor="Cursors/minato_shuriken_busy.ani">
+                <Button.Background>
+                    <ImageBrush ImageSource="MenuBackground/MenuHighscore.png"/>
+                </Button.Background>
+            </Button>
+            <Button Style="{DynamicResource ExitButton}" Grid.Row="3" Margin="10" FontSize="20" Click="Button_Click_1"
+                    BorderBrush="Transparent" BorderThickness="0" Cursor="Cursors/minato_shuriken_busy.ani">
+                <Button.Background>
+                    <ImageBrush ImageSource="MenuBackground/MenuExit.png"/>
+                </Button.Background>
+            </Button>
         </Grid>
 
 
