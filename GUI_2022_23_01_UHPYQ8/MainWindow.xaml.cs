@@ -60,6 +60,12 @@ namespace GUI_2022_23_01_UHPYQ8
         {
             Application.Current.Shutdown();
         }
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            myDisplay.player.Clock = null;
+            myDisplay.player.Stop();
+            ChangeContentToHighscore();
+        }
 
     }
 }
