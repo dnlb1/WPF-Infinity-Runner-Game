@@ -27,6 +27,7 @@ namespace GUI_2022_23_01_UHPYQ8
         {
             InitializeComponent();
             InitNormalCursor();
+            content = Content;
         }
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
