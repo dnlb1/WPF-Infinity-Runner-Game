@@ -46,7 +46,10 @@ namespace GUI_2022_23_01_UHPYQ8
             Highscore Hw = new Highscore(this);
             this.Content = Hw;
         }
-
+        public void GoBackToStartPage()
+        {
+            Content = content;
+        }
 
     }
 }
