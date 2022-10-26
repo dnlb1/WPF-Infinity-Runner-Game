@@ -20,6 +20,9 @@ namespace GUI_2022_23_01_UHPYQ8
     /// </summary>
     public partial class MainWindow : Window
     {
+        Game gm;
+        private object content;
+        public double volume;
         public MainWindow()
         {
             InitializeComponent();
