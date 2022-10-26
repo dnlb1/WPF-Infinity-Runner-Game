@@ -15,5 +15,19 @@
             <ColumnDefinition Width="50*"/>
         </Grid.ColumnDefinitions>
         <Dp:Display x:Name="myDisplay"></Dp:Display>
+        
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+
+
     </Grid>
 </Window>
