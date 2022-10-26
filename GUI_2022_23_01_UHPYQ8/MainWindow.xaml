@@ -11,7 +11,8 @@
         WindowState="Maximized"
         KeyDown="Window_KeyDown"
         KeyUp="Window_KeyUp"
-        Loaded="Window_Loaded">
+        Loaded="Window_Loaded"
+        Cursor="Cursors/minato_normal_select_animated.ani">
 
     <Window.Resources>
         <ImageBrush x:Key="MenuStart" ImageSource="MenuBackground/MenuStart.png" ></ImageBrush>

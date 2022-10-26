@@ -27,7 +27,6 @@ namespace GUI_2022_23_01_UHPYQ8
         public MainWindow()
         {
             InitializeComponent();
-            InitNormalCursor();
             content = Content;
         }
 
@@ -75,20 +74,6 @@ namespace GUI_2022_23_01_UHPYQ8
             myDisplay.VolumeChanger(Volume.Value / 100);
             InvalidateVisual();
         }
-
-        private void InitNormalCursor()
-        {
-            System.Windows.Resources.StreamResourceInfo myInfo;
-
-            myInfo = Application.GetResourceStream(
-                new Uri(System.IO.Path.Combine("Cursors", "minato_normal_select_animated.ani"), UriKind.RelativeOrAbsolute));
-
-            UnmanagedMemoryStream st = (UnmanagedMemoryStream)myInfo.Stream;
-            Cursor myAni = new Cursor(st);
-            this.Cursor = myAni;
-        }
-
-
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             myDisplay.Resize(new Size(myGrid.ActualWidth, myGrid.ActualHeight));
