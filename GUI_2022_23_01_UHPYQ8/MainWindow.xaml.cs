@@ -98,17 +98,26 @@ namespace GUI_2022_23_01_UHPYQ8
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-
+            //if (Gm != null)
+            //{
+            //    Gm.Window_KeyDown(sender, e);
+            //}
         }
 
         private void Window_KeyUp(object sender, KeyEventArgs e)
         {
-
+            //if (Gm != null)
+            //{
+            //    Gm.Window_KeyUp(sender, e);
+            //}
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            //if (Gm != null)
+            //{
+            //    Gm.Window_Loaded(sender, e);
+            //}
         }
     }
 }
