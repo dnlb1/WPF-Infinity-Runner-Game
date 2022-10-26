@@ -95,5 +95,19 @@ namespace GUI_2022_23_01_UHPYQ8
             this.Cursor = myAni;
         }
 
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void Window_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
