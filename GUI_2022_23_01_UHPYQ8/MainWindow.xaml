@@ -4,9 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_2022_23_01_UHPYQ8"
+        xmlns:Dp="clr-namespace:GUI_2022_23_01_UHPYQ8.Render"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="Madara Uchia Edo Tensei" Height="450" Width="800"
+        SizeChanged="Window_SizeChanged">
+    
+    <Grid x:Name="myGrid" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <Dp:Display x:Name="myDisplay"></Dp:Display>
     </Grid>
 </Window>
