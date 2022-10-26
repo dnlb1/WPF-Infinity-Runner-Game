@@ -50,6 +50,13 @@ namespace GUI_2022_23_01_UHPYQ8
         {
             Content = content;
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            myDisplay.player.Clock = null;
+            myDisplay.player.Stop();
+            ChangeToGame();
+        }
+
 
     }
 }
