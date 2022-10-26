@@ -71,5 +71,9 @@ namespace GUI_2022_23_01_UHPYQ8
         {
             this.WindowState = WindowState.Normal;
         }
+        private void ToggleButton_Checked(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Maximized;
+        }
     }
 }
