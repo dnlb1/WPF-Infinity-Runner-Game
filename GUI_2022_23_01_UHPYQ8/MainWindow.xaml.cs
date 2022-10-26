@@ -75,5 +75,11 @@ namespace GUI_2022_23_01_UHPYQ8
         {
             this.WindowState = WindowState.Maximized;
         }
+        private void Volume_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            this.volume = Volume.Value / 100;
+            myDisplay.VolumeChanger(Volume.Value / 100);
+            InvalidateVisual();
+        }
     }
 }
