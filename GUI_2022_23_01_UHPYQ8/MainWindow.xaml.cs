@@ -31,14 +31,6 @@ namespace GUI_2022_23_01_UHPYQ8
             content = Content;
         }
 
-        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
-        {
-            myDisplay.Resize(new Size(myGrid.ActualWidth, myGrid.ActualHeight));
-            //if (Gm != null)
-            //{
-            //    Gm.Window_SizeChanged(sender, e);
-            //}
-        }
         public void ChangeToGame()
         {
             Gm = new Game(this);
@@ -94,6 +86,16 @@ namespace GUI_2022_23_01_UHPYQ8
             UnmanagedMemoryStream st = (UnmanagedMemoryStream)myInfo.Stream;
             Cursor myAni = new Cursor(st);
             this.Cursor = myAni;
+        }
+
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            myDisplay.Resize(new Size(myGrid.ActualWidth, myGrid.ActualHeight));
+            //if (Gm != null)
+            //{
+            //    Gm.Window_SizeChanged(sender, e);
+            //}
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
