@@ -85,6 +85,19 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="MenuBackground/NameBackground.png"></ImageBrush>
+            </Grid.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                    <ColumnDefinition Width="3.2*"></ColumnDefinition>
+                    <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Viewbox Grid.Column="1">
+                    <Label Content="Your Name" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="{StaticResource naruto}" Foreground="#FF151515"></Label>
+                </Viewbox>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
