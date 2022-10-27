@@ -38,7 +38,12 @@ namespace GUI_2022_23_01_UHPYQ8
             menuGrid.Visibility = Visibility.Hidden;
         }
 
-        private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
+        private void Engine(object sender, EventArgs e)
+        {
+
+        }
+
+        public void Page_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             if (window.WindowState == WindowState.Maximized)
             {
@@ -58,8 +63,7 @@ namespace GUI_2022_23_01_UHPYQ8
                 logic.Resize(new Size(myGrid.ActualWidth, myGrid.ActualHeight));
             }
         }
-
-        private void Page_Loaded(object sender, RoutedEventArgs e)
+        public void Page_Loaded(object sender, RoutedEventArgs e)
         {
             dt = new DispatcherTimer();
             dt.Interval = TimeSpan.FromMilliseconds(30);
@@ -81,14 +85,7 @@ namespace GUI_2022_23_01_UHPYQ8
             }
             window.Show();
         }
-        private void Engine(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void Page_KeyDown(object sender, KeyEventArgs e)
+        public void Page_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
             {
@@ -115,8 +112,7 @@ namespace GUI_2022_23_01_UHPYQ8
                 logic.Control(GameLogic.ControlKey.skilltwo);
             }
         }
-
-        private void Page_KeyUp(object sender, KeyEventArgs e)
+        public void Page_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Space)
             {
