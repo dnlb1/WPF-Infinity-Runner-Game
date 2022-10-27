@@ -79,5 +79,11 @@
                 </ItemsControl>
             </ScrollViewer>
         </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        </Grid>
     </Grid>
 </Page>
