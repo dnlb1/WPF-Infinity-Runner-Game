@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUI_2022_23_01_UHPYQ8.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Media;
@@ -23,10 +24,12 @@ namespace GUI_2022_23_01_UHPYQ8
     {
         MainWindow window;
         SoundPlayer clicksound = new SoundPlayer(System.IO.Path.Combine("Music", "ClickSound.wav"));
+        IName name;
         public Game(MainWindow w)
         {
             InitializeComponent();
             this.window = w;
+            this.name = new Name();
         }
 
         private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
