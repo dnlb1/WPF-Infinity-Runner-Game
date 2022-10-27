@@ -10,6 +10,8 @@
         WindowState="Maximized"
         Cursor="Cursors/minato_normal_select_animated.ani">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="MenuBackground/NameBackground.png"></ImageBrush>
+        </Grid.Background>
     </Grid>
 </Window>
