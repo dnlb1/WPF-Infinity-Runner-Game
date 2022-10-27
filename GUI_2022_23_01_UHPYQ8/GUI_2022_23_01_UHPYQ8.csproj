@@ -98,6 +98,16 @@
     <None Remove="Images\Run\Transform\transform8.png" />
     <None Remove="Images\SandVillage.png" />
     <None Remove="Images\scroll.jpg" />
+    <None Remove="Images\SkillShoot\10s.png" />
+    <None Remove="Images\SkillShoot\1s.png" />
+    <None Remove="Images\SkillShoot\2s.png" />
+    <None Remove="Images\SkillShoot\3s.png" />
+    <None Remove="Images\SkillShoot\4s.png" />
+    <None Remove="Images\SkillShoot\5s.png" />
+    <None Remove="Images\SkillShoot\6s.png" />
+    <None Remove="Images\SkillShoot\7s.png" />
+    <None Remove="Images\SkillShoot\8s.png" />
+    <None Remove="Images\SkillShoot\9s.png" />
     <None Remove="Images\Stand\stand1.png" />
     <None Remove="Images\Stand\stand2.png" />
     <None Remove="Images\Stand\stand3.png" />
@@ -382,6 +392,36 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\scroll.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SkillShoot\10s.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SkillShoot\1s.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SkillShoot\2s.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SkillShoot\3s.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SkillShoot\4s.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SkillShoot\5s.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SkillShoot\6s.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SkillShoot\7s.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SkillShoot\8s.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SkillShoot\9s.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Stand\stand1.png">

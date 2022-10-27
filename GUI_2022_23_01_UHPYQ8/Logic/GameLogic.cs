@@ -543,7 +543,42 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             }
 
         } //SkillTwo
-
+        private void SkillMove(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    SkillOne = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/SkillShoot", "2s.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 3:
+                    SkillOne = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/SkillShoot", "3s.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 5:
+                    SkillOne = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/SkillShoot", "3s.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 7:
+                    SkillOne = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/SkillShoot", "4s.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 9:
+                    SkillOne = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/SkillShoot", "5s.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 11:
+                    SkillOne = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/SkillShoot", "6s.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 13:
+                    SkillOne = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/SkillShoot", "7s.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 15:
+                    SkillOne = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/SkillShoot", "8s.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 17:
+                    SkillOne = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/SkillShoot", "9s.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 19:
+                    SkillOne = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/SkillShoot", "10s.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+            }
+        }
         public enum ControlKey
         {
             space,
