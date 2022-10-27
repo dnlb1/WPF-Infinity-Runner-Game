@@ -506,6 +506,43 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             }
 
         } //SkillTwo
+        public void ChangeBackForm(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/ChangeBack", "1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 3:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/ChangeBack", "2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 5:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/ChangeBack", "3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 7:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/ChangeBack", "4.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 9:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/ChangeBack", "5.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 10:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/ChangeBack", "6.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 12:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/ChangeBack", "7.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 13:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/ChangeBack", "8.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 15:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/ChangeBack", "9.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 16:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/ChangeBack", "10.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+            }
+
+        } //SkillTwo
 
         public enum ControlKey
         {
