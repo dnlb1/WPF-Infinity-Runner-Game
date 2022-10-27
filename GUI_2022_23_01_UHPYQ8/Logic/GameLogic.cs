@@ -296,7 +296,53 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             }
 
         }
+        public void DeadMadara(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 7:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 14:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 21:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill4.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 28:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill5.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 35:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill6.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 42:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill7.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 49:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill8.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 56:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill9.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 63:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill10.png"), UriKind.RelativeOrAbsolute)));
+                    MadaraDead = null;
+                    break;
+                case 70:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill11.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 77:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill12.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 84:
+                    SkillDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "skill13.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+            }
 
+        }
 
         public enum ControlKey
         {

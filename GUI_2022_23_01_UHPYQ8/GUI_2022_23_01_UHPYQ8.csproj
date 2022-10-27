@@ -11,6 +11,20 @@
     <None Remove="Cursors\minato_normal_select_animated.ani" />
     <None Remove="Cursors\minato_shuriken_busy.ani" />
     <None Remove="Fonts\njnaruto.ttf" />
+    <None Remove="Images\Dead\dead3.png" />
+    <None Remove="Images\Dead\Skill1.png" />
+    <None Remove="Images\Dead\skill10.png" />
+    <None Remove="Images\Dead\skill11.png" />
+    <None Remove="Images\Dead\skill12.png" />
+    <None Remove="Images\Dead\skill13.png" />
+    <None Remove="Images\Dead\Skill2.png" />
+    <None Remove="Images\Dead\skill3.png" />
+    <None Remove="Images\Dead\skill4.png" />
+    <None Remove="Images\Dead\skill5.png" />
+    <None Remove="Images\Dead\skill6.png" />
+    <None Remove="Images\Dead\skill7.png" />
+    <None Remove="Images\Dead\skill8.png" />
+    <None Remove="Images\Dead\skill9.png" />
     <None Remove="Images\HpBar\hpbar1.png" />
     <None Remove="Images\HpBar\hpbar2.png" />
     <None Remove="Images\HpBar\hpbar3.png" />
@@ -85,6 +99,48 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Fonts\njnaruto.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\dead3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\Skill1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\skill10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\skill11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\skill12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\skill13.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\Skill2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\skill3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\skill4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\skill5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\skill6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\skill7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\skill8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Dead\skill9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\HpBar\hpbar1.png">
