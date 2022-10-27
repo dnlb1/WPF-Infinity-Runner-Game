@@ -28,6 +28,15 @@
             <RowDefinition Height="10*"></RowDefinition>
             <RowDefinition Height="8*"></RowDefinition>
         </Grid.RowDefinitions>
-        
+        <Viewbox Grid.Column="1">
+            <Label Content="Game Over" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40" FontFamily="{StaticResource naruto}">
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FFB41A1A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+            </Label>
+        </Viewbox>
     </Grid>
 </Window>
