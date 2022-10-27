@@ -36,5 +36,10 @@ namespace GUI_2022_23_01_UHPYQ8.ViewModel
                 return (bool)DependencyPropertyDescriptor.FromProperty(prop, typeof(FrameworkElement)).Metadata.DefaultValue;
             }
         }
+
+        public NameWindowViewModel(Window window)
+        {
+
+        }
     }
 }
