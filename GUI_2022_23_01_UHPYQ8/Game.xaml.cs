@@ -53,6 +53,10 @@ namespace GUI_2022_23_01_UHPYQ8
                 WindowModeButton.Margin = new Thickness(40, 10, 40, 10);
             }
             myDisplay.Resize(new Size(myGrid.ActualWidth, myGrid.ActualHeight));
+            if (logic != null)
+            {
+                logic.Resize(new Size(myGrid.ActualWidth, myGrid.ActualHeight));
+            }
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
