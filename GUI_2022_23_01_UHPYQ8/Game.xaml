@@ -18,6 +18,7 @@
         <ImageBrush x:Key="WindowModeWhite" ImageSource="Images/MainMenuHud/windowmodewhite.png"></ImageBrush>
         <ImageBrush x:Key="ExitWhite" ImageSource="Images/MainMenuHud/ExitWhite.png"></ImageBrush>
         <ImageBrush x:Key="ResumeWhite" ImageSource="Images/MainMenuHud/resumetry.png"></ImageBrush>
+        
     </Page.Resources>
 
     <Grid x:Name="myGrid">
@@ -73,8 +74,14 @@
                         <Image Grid.Column="3" Source="Images/MainMenuHud/volumeon.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_1"></Image>
                     </Grid>
                     
-                    
-                    
+                    <Button x:Name="WindowModeButton"  Grid.Column="1" Margin="40 10 40 10" Click="Button_Click_2" BorderThickness="0" BorderBrush="Transparent"
+                            Cursor="Cursors/minato_shuriken_busy.ani">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Images/MainMenuHud/windowmode2.png"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+
+
                 </Grid>
             </Grid>
         </Grid>

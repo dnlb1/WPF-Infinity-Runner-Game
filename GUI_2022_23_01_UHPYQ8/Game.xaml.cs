@@ -20,7 +20,7 @@ namespace GUI_2022_23_01_UHPYQ8
     /// </summary>
     public partial class Game : Page
     {
-        MainWindow w;
+        MainWindow window;
         public Game(MainWindow w)
         {
             InitializeComponent();
@@ -44,6 +44,23 @@ namespace GUI_2022_23_01_UHPYQ8
         private void Page_KeyUp(object sender, KeyEventArgs e)
         {
 
+        }
+
+        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+          
+        }
+        private void Image_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+           
+        }
+        private void Volume_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+           
         }
     }
 }
