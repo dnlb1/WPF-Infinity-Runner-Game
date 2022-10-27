@@ -61,6 +61,7 @@
                             <ColumnDefinition Width="32*"></ColumnDefinition>
                             <ColumnDefinition Width="32*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
+                        <Image Grid.Column="1" Source="Images/MainMenuHud/volumeoff.png" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
                     </Grid>
                 </Grid>
             </Grid>
