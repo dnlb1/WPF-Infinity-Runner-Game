@@ -17,6 +17,9 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public GameLogic()
         {
 
+            this.Esc = new SolidColorBrush(Color.FromRgb(105, 105, 105));
+            this.Esc.Opacity = 0.5;
+
             timer = new System.Timers.Timer();
             timer.Interval = 15000; //15mpig lehetsz a formában. Villogás, hogyha kezd lejárni
             timer.Elapsed += Timer_Elapsed;
@@ -29,18 +32,52 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             BonusMana.Interval = 1000; //10mp
             //10mp-nként van 50% esélye, hogy spawnol
             BonusMana.Elapsed += SpawnMana;
-
+            ManaMove(r.Next(1, 6));
 
             Intro = false;
             EscON = false;
+            Katon = false;
+            IsStanding = false;
+            IsSkilledOne = false;
+            IsSkilledTwo = false;
+            Once = false;
+            SkillShoot = false;
+            GoAfterSkill = false;
+            DisapearShuriken = false;
+            gameOver = false;
+            enemyspawn = false;
+            youcanspawnenemy = false;
+            MMEnded = false;
+            Hitted = false;
+            IsInForm = false;
+            canjump = false;
+            drawform = false;
+            DisapearMana = false;
+            ChaningBack = false;
 
             hp = 5;
+            mana = 0;
+            force = 20;
+            speed = 10;
+            BackgroundSpeed = 15;
+            ManaSpeed = 15;
+            ShurikenSpeed = 50;
+            counter = 0;
+            score = 0;
+            TimeLimit = 0;
 
+
+
+            MadaraDead = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Dead", "Dead3.png"), UriKind.RelativeOrAbsolute)));
+            WaterSound.Open(new Uri(Path.Combine("Music", "Water.wav"), UriKind.RelativeOrAbsolute));
+            WaterSound.Volume = 0.9;
 
             WaterSound.MediaEnded += WaterSound_MediaEnded;
             HurtMadara.MediaEnded += HurtMadara_MediaEnded;
             Susano.MediaEnded += Susano_MediaEnded;
+            //Susano1.MediaEnded += Susano1_MediaEnded;
 
+          
             Susano.Open(new Uri(System.IO.Path.Combine("Music", "Susano.mp3"), UriKind.RelativeOrAbsolute));
             MainMusic.Open(new Uri(System.IO.Path.Combine("Music", "MainGameTheme.wav"), UriKind.RelativeOrAbsolute));
             HurtMadara.Open(new Uri(System.IO.Path.Combine("Music", "hurtmadara.wav"), UriKind.RelativeOrAbsolute));
