@@ -18,7 +18,15 @@ namespace GUI_2022_23_01_UHPYQ8.Render
             this.size = size;
             InvalidateVisual();
         }
-
+        public void SetUp(IGameLogic model)
+        {
+            this.model = model;
+            model.Changed += Model_Changed;
+        }
+        private void Model_Changed(object sender, EventArgs e)
+        {
+            this.InvalidateVisual();
+        }
 
         protected override void OnRender(DrawingContext drawingContext)
         {
