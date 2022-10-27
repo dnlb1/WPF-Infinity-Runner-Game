@@ -41,7 +41,25 @@ namespace GUI_2022_23_01_UHPYQ8
 
         private void Engine(object sender, EventArgs e)
         {
-           
+            if (!logic.gameOver)
+            {
+                logic.GameEngine();
+            }
+            else
+            {
+                dt.Stop();
+                //GameOver
+                if (logic.gameOver)
+                {
+                    Player ActualPlayer = new Player()
+                    {
+                        Name = logic.Name,
+                        Score = logic.score ///////
+                    };
+                    logic.MainMusic.Stop();
+                    window.GoBackToStartPage();
+                }
+            }
         }
 
         public void Page_SizeChanged(object sender, SizeChangedEventArgs e)
