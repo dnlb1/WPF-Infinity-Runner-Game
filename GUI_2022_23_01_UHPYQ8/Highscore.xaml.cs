@@ -33,7 +33,7 @@ namespace GUI_2022_23_01_UHPYQ8
 
         private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-
+            myDisplay.Resize(new Size(myGrid.ActualWidth, myGrid.ActualHeight));
         }
     }
 }

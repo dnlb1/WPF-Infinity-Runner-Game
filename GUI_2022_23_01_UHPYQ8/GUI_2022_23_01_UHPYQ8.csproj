@@ -20,6 +20,7 @@
     <None Remove="Images\MainMenuHud\windowmode2.png" />
     <None Remove="Images\MainMenuHud\windowmodewhite.png" />
     <None Remove="Images\SandVillage.png" />
+    <None Remove="Images\scroll.jpg" />
     <None Remove="MenuBackground\ecset1.png" />
     <None Remove="MenuBackground\ecset2.png" />
     <None Remove="MenuBackground\Kunai5.png" />
@@ -79,6 +80,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\SandVillage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\scroll.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="MenuBackground\ecset1.png">
