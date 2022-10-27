@@ -644,6 +644,80 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
                     break;
             }
         }
+        private void SkillMovement()
+        {
+            SkillIndex += 1;
+            if (SkillIndex < 19)
+            {
+                SkillMove(SkillIndex);
+            }
+            else if (SkillShootX > size.Width)
+            {
+                SkillIndex = 0;
+            }
+        }
+
+        private void ShurikenMovement()
+        {
+
+            if (ObstacleX < 0 - size.Width + 50)
+            {
+                //Spawn
+                if (RandomGene.r.Next(0, 2) == 0 && chanche % 2 == 0)
+                {
+                    ObstacleX = size.Width * 1.5;
+                    DisapearShuriken = false;
+                    score += 1;
+                }
+                else
+                {
+                    chanche++;
+                    if (chanche % 5 == 0)
+                    {
+                        youcanspawnenemy = true;
+                    }
+                }
+            }
+            else
+            {
+                ObstacleX = ObstacleX - ShurikenSpeed;
+                obstacleHitbox = new Rect(ObstacleX, ObstacleY, size.Width / 10, size.Height / 10);
+                ShurikenIndex += 1.5;
+                if (ShurikenIndex > 10)
+                {
+                    ShurikenIndex = 1;
+                }
+                ShurikenMove(ShurikenIndex);
+            }
+        }
+        private void ManaMovement()
+        {
+
+            if (ManaX < 0 - size.Width + 50)
+            {
+                ManaX = size.Width * 1.5;
+                DisapearMana = false;
+                ManaChanche = false; //kikapcsoolom hha vége az animacionak és elindítom a timert megint
+                BonusMana.Start();
+                ManaMove(r.Next(1, 6));
+                TopOrBot = false;
+            }
+            else
+            {
+                if (TopOrBot)
+                {
+                    ManaY = size.Height / 2 * 0.5;
+                }
+                else
+                {
+                    ManaY = size.Height / 2 * 1.2;
+                }
+                ManaX = ManaX - ManaSpeed;
+                manaHitbox = new Rect(ManaX, ManaY, size.Width / 10, size.Height / 10);
+            }
+        }
+
+
         public enum ControlKey
         {
             space,
