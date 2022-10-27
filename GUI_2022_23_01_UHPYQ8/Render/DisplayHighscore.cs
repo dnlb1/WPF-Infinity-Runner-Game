@@ -48,7 +48,14 @@ namespace GUI_2022_23_01_UHPYQ8.Render
                     timeline.RepeatBehavior = System.Windows.Media.Animation.RepeatBehavior.Forever;
                     MediaClock clock = timeline.CreateClock();
                     player.Clock = clock;
-                }                
+                }
+                if (size.Width > 0 && size.Height > 0)
+                {
+                    //rajzoljuk ki a hátteret
+                    drawingContext.DrawRectangle(brush,
+                        null,
+                        new Rect(0, 0, size.Width, size.Height));
+                }
             }
         }
     }
