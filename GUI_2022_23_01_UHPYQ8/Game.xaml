@@ -67,6 +67,7 @@
                                 <SolidColorBrush Opacity="0.2" Color="#FF211B1B"></SolidColorBrush>
                             </Slider.Background>
                         </Slider>
+                        <Image Grid.Column="3" Source="Images/MainMenuHud/volumeon.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_1"></Image>
                     </Grid>
                 </Grid>
             </Grid>
