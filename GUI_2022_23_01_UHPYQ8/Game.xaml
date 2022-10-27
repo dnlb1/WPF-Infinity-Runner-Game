@@ -15,6 +15,9 @@
       >
     <Page.Resources>
         <FontFamily x:Key="naruto" >/Fonts/#Ninja Naruto</FontFamily>
+        <ImageBrush x:Key="WindowModeWhite" ImageSource="Images/MainMenuHud/windowmodewhite.png"></ImageBrush>
+        <ImageBrush x:Key="ExitWhite" ImageSource="Images/MainMenuHud/ExitWhite.png"></ImageBrush>
+        <ImageBrush x:Key="ResumeWhite" ImageSource="Images/MainMenuHud/resumetry.png"></ImageBrush>
     </Page.Resources>
 
     <Grid x:Name="myGrid">
@@ -69,6 +72,9 @@
                         </Slider>
                         <Image Grid.Column="3" Source="Images/MainMenuHud/volumeon.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_1"></Image>
                     </Grid>
+                    
+                    
+                    
                 </Grid>
             </Grid>
         </Grid>
