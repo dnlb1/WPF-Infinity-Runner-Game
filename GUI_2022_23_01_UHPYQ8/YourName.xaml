@@ -5,7 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_2022_23_01_UHPYQ8"
         mc:Ignorable="d"
-        Title="YourName" Height="450" Width="800">
+        Title="YourName" Height="450" Width="800"
+        Closing="Window_Closing"
+        WindowState="Maximized"
+        Cursor="Cursors/minato_normal_select_animated.ani">
+    <Window.Resources>
+        <FontFamily x:Key="naruto" >/Fonts/#Ninja Naruto</FontFamily>
+    </Window.Resources>
     <Grid>
         
     </Grid>

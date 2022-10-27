@@ -27,5 +27,10 @@ namespace GUI_2022_23_01_UHPYQ8
             VMName = new NameWindowViewModel(this);
             this.DataContext = VMName;
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
     }
 }
