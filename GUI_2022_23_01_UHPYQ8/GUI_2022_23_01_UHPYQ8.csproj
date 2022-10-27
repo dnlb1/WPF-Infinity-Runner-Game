@@ -11,6 +11,7 @@
     <None Remove="Cursors\minato_normal_select_animated.ani" />
     <None Remove="Cursors\minato_shuriken_busy.ani" />
     <None Remove="Fonts\njnaruto.ttf" />
+    <None Remove="Images\Background\SandVillage.png" />
     <None Remove="Images\Dead\dead3.png" />
     <None Remove="Images\Dead\Skill1.png" />
     <None Remove="Images\Dead\skill10.png" />
@@ -168,6 +169,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Fonts\njnaruto.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Background\SandVillage.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Dead\dead3.png">
