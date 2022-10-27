@@ -36,6 +36,11 @@
     <None Remove="Images\HpBar\manabar3.png" />
     <None Remove="Images\HpBar\manabar4.png" />
     <None Remove="Images\HpBar\manabar5.png" />
+    <None Remove="Images\Jutsu\jutsu1.png" />
+    <None Remove="Images\Jutsu\Jutsu2.png" />
+    <None Remove="Images\Jutsu\jutsuhit.png" />
+    <None Remove="Images\Jutsu\regi1.png" />
+    <None Remove="Images\Jutsu\regi2.png" />
     <None Remove="Images\MainMenuHud\exit2.png" />
     <None Remove="Images\MainMenuHud\ExitWhite.png" />
     <None Remove="Images\MainMenuHud\MenuBack.png" />
@@ -175,6 +180,21 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\HpBar\manabar4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Jutsu\jutsu1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Jutsu\Jutsu2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Jutsu\jutsuhit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Jutsu\regi1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Jutsu\regi2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\MainMenuHud\exit2.png">

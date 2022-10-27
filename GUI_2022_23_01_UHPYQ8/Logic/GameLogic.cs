@@ -381,6 +381,25 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             }
 
         }
+        public void SkillOneMadara(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jutsu", "jutsu1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 7:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jutsu", "jutsu1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 15:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jutsu", "jutsu2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 20:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jutsu", "jutsu2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+            }
+
+        }
 
         public enum ControlKey
         {
