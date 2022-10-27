@@ -36,6 +36,48 @@
                     <ImageBrush ImageSource="MenuBackground/Ranglist.png"/>
                 </Label.Background>
             </Label>
+            <ScrollViewer Grid.Column="1" Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                <ItemsControl ItemsSource="{Binding Runners}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="{Binding Rank}" FontWeight="Bold" ContentStringFormat=" {0}." FontSize="30" Foreground="Black"
+                                           VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                                    </Label>
+                                    <StackPanel Grid.Column="1" Margin="5">
+                                        <Label Content="{Binding WhenStarted}"  ContentStringFormat="Date: {0}" FontSize="15" Foreground="Black" >
+                                            <Label.Resources>
+                                                <Style TargetType="TextBlock">
+                                                    <Setter Property="TextWrapping" Value="Wrap" />
+                                                </Style>
+                                            </Label.Resources>
+                                        </Label>
+                                        <Label Content="{Binding Name}" ContentStringFormat="Name: {0}" FontSize="15" Foreground="Black" >
+                                            <Label.Resources>
+                                                <Style TargetType="TextBlock">
+                                                    <Setter Property="TextWrapping" Value="Wrap" />
+                                                </Style>
+                                            </Label.Resources>
+                                        </Label>
+                                        <Label Content="{Binding Score}" ContentStringFormat="Score: {0}" FontSize="15" Foreground="Black" FontWeight="Bold" >
+                                            <Label.Resources>
+                                                <Style TargetType="TextBlock">
+                                                    <Setter Property="TextWrapping" Value="Wrap" />
+                                                </Style>
+                                            </Label.Resources>
+                                        </Label>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
         </Grid>
     </Grid>
 </Page>
