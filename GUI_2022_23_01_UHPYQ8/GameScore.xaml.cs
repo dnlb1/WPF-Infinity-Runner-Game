@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUI_2022_23_01_UHPYQ8.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,7 @@ namespace GUI_2022_23_01_UHPYQ8
     /// </summary>
     public partial class GameScore : Window
     {
-        public GameScore()
+        public GameScore(Player py)
         {
             InitializeComponent();
         }
