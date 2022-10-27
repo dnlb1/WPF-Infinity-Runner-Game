@@ -16,6 +16,13 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
     {
         public GameLogic()
         {
+
+
+
+
+            hp = 5;
+
+
             IntroMedia.Open(new Uri(System.IO.Path.Combine("Videos", "Intro.mp4"), UriKind.RelativeOrAbsolute));
             IntroMedia.MediaEnded += IntroMedia_MediaEnded;
         }
@@ -32,9 +39,10 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public string Name { get; set; }
         public bool Intro { get; set; }
         public bool gameOver { get; set; } //vége van-e a játéknak
+        public bool EscON { get; set; }
 
         public int score { get; set; }
-
+        public int hp { get; set; }
         public MediaPlayer IntroMedia { get; set; } = new MediaPlayer();
         public MediaPlayer MainMusic { get; set; } = new MediaPlayer();
         public MediaPlayer clicksound { get; set; } = new MediaPlayer();
@@ -79,7 +87,10 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
 
         public void GameEngine()
         {
+            if (hp >1)
+            {
 
+            }
         }
 
 
