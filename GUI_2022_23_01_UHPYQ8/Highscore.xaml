@@ -11,7 +11,10 @@
       SizeChanged="Page_SizeChanged">
 
     <Grid x:Name="myGrid">
-        <Render:DisplayHighscore x:Name="myDisplay"></Render:DisplayHighscore>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Render:DisplayHighscore x:Name="myDisplay"></Render:DisplayHighscore>        
     </Grid>
 </Page>
