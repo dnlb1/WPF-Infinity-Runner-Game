@@ -11,6 +11,8 @@
         Cursor="Cursors/minato_normal_select_animated.ani">
     <Window.Resources>
         <FontFamily x:Key="naruto" >/Fonts/#Ninja Naruto</FontFamily>
+        <ImageBrush x:Key="Brush" ImageSource="MenuBackground/ecset2.png"></ImageBrush>
+
     </Window.Resources>
     <Grid>
         
