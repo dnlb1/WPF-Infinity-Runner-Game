@@ -29,6 +29,14 @@
                 <ColumnDefinition Width="3.2*"></ColumnDefinition>
                 <ColumnDefinition Width="1.1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="20*"></RowDefinition>
+                    <RowDefinition Height="40*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                </Grid.RowDefinitions>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
