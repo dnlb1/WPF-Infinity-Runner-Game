@@ -26,6 +26,7 @@ namespace GUI_2022_23_01_UHPYQ8
         public Game(MainWindow w)
         {
             InitializeComponent();
+            this.window = w;
         }
 
         private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
