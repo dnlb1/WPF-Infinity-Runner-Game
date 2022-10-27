@@ -30,7 +30,14 @@ namespace GUI_2022_23_01_UHPYQ8
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-
+            if ((VMName.EnteredName == "" || VMName.EnteredName == null) || VMName.IsPressed == false)
+            {
+                DialogResult = false;
+            }
+            else
+            {
+                DialogResult = true;
+            }
         }
     }
 }
