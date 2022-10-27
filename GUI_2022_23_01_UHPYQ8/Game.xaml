@@ -27,5 +27,8 @@
             <ColumnDefinition Width="20*"/>
         </Grid.ColumnDefinitions>
         <GP:GameDisplay x:Name="myDisplay"></GP:GameDisplay>
+        <Grid Grid.Column="1" Grid.Row="1" x:Name="ScoreTable">
+            
+        </Grid>
     </Grid>
 </Page>
