@@ -194,6 +194,36 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         double DeadMadaraIndex;
         double TimeLimit;
 
+        public void HpBarChanged(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    HPBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "hpbar5.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 2:
+                    HPBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "hpbar4.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 3:
+                    HPBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "hpbar3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 4:
+                    HPBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "hpbar2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 5:
+                    HPBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "hpbar1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                default:
+                    HPBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "hpbar1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+            }
+
+        }
+
+
+
+
+
         public enum ControlKey
         {
             space,
@@ -226,7 +256,6 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
                     break;
             }
         }
-
         public void GameEngine()
         {
             if (hp >1)

@@ -11,6 +11,17 @@
     <None Remove="Cursors\minato_normal_select_animated.ani" />
     <None Remove="Cursors\minato_shuriken_busy.ani" />
     <None Remove="Fonts\njnaruto.ttf" />
+    <None Remove="Images\HpBar\hpbar1.png" />
+    <None Remove="Images\HpBar\hpbar2.png" />
+    <None Remove="Images\HpBar\hpbar3.png" />
+    <None Remove="Images\HpBar\hpbar4.png" />
+    <None Remove="Images\HpBar\hpbar5.png" />
+    <None Remove="Images\HpBar\manabar0.png" />
+    <None Remove="Images\HpBar\manabar1.png" />
+    <None Remove="Images\HpBar\manabar2.png" />
+    <None Remove="Images\HpBar\manabar3.png" />
+    <None Remove="Images\HpBar\manabar4.png" />
+    <None Remove="Images\HpBar\manabar5.png" />
     <None Remove="Images\MainMenuHud\exit2.png" />
     <None Remove="Images\MainMenuHud\ExitWhite.png" />
     <None Remove="Images\MainMenuHud\MenuBack.png" />
@@ -63,6 +74,30 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Fonts\njnaruto.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\HpBar\hpbar1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\HpBar\hpbar2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\HpBar\hpbar3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\HpBar\hpbar4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\HpBar\hpbar5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\HpBar\manabar1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\HpBar\manabar3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\HpBar\manabar4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\MainMenuHud\exit2.png">
@@ -187,6 +222,24 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
     <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\HpBar\manabar0.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\HpBar\manabar2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\HpBar\manabar5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
