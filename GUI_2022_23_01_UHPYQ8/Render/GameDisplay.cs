@@ -18,6 +18,7 @@ namespace GUI_2022_23_01_UHPYQ8.Render
             this.size = size;
             InvalidateVisual();
         }
+
         public void SetUp(IGameLogic model)
         {
             this.model = model;
@@ -31,6 +32,20 @@ namespace GUI_2022_23_01_UHPYQ8.Render
         protected override void OnRender(DrawingContext drawingContext)
         {
             base.OnRender(drawingContext);
+
+            if (model != null && size.Width > 0 && size.Height > 0)
+            {
+                if (model.Intro)
+                {
+
+                }
+                else
+                {
+                    drawingContext.DrawVideo(
+                       model.IntroMedia,
+                       new Rect(0, 0, size.Width, size.Height));
+                }
+            }
         }
     }
 }

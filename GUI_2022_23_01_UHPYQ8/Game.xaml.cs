@@ -67,6 +67,19 @@ namespace GUI_2022_23_01_UHPYQ8
             
             window.Hide();
             logic.Name = name.GetName();
+            if (name.DialogResult)
+            {
+                logic.IntroMedia.Play();
+                myDisplay.Resize(new Size(myGrid.ActualWidth, myGrid.ActualHeight));
+                logic.Resize(new Size(myGrid.ActualWidth, myGrid.ActualHeight));
+                myDisplay.SetUp(logic);
+                dt.Start();
+            }
+            else
+            {
+                window.GoBackToStartPage();
+            }
+            window.Show();
         }
         private void Engine(object sender, EventArgs e)
         {
