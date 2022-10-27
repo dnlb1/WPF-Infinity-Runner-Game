@@ -19,5 +19,6 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         {
             this.size = size;
         }
+        public string Name { get; set; }
     }
 }
