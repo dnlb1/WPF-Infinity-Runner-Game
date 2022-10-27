@@ -37,7 +37,14 @@
     <None Remove="MenuBackground\Ranglist.png" />
     <None Remove="MenuBackground\sandhub.jpg" />
     <None Remove="MenuBackground\sandpng.png" />
+    <None Remove="Music\ClickSound.wav" />
+    <None Remove="Music\deadmadara.wav" />
+    <None Remove="Music\hurtmadara.wav" />
+    <None Remove="Music\Katon.wav" />
     <None Remove="Music\ListMusic.wav" />
+    <None Remove="Music\MainGameTheme.wav" />
+    <None Remove="Music\Susano.mp3" />
+    <None Remove="Music\Water.wav" />
     <None Remove="RankList\Rank.txt" />
     <None Remove="Videos\Goakyou.mp4" />
     <None Remove="Videos\Intro.mp4" />
@@ -136,7 +143,28 @@
     <Content Include="MenuBackground\sandpng.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Music\ClickSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\deadmadara.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\hurtmadara.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\Katon.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Music\ListMusic.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\MainGameTheme.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\Susano.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\Water.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="RankList\Rank.txt">
