@@ -31,6 +31,14 @@
     <None Remove="Images\MainMenuHud\volumeon.png" />
     <None Remove="Images\MainMenuHud\windowmode2.png" />
     <None Remove="Images\MainMenuHud\windowmodewhite.png" />
+    <None Remove="Images\Run\1.png" />
+    <None Remove="Images\Run\2.png" />
+    <None Remove="Images\Run\3.png" />
+    <None Remove="Images\Run\4.png" />
+    <None Remove="Images\Run\5.png" />
+    <None Remove="Images\Run\6.png" />
+    <None Remove="Images\Run\hit1.png" />
+    <None Remove="Images\Run\hit2.png" />
     <None Remove="Images\SandVillage.png" />
     <None Remove="Images\scroll.jpg" />
     <None Remove="MenuBackground\ecset1.png" />
@@ -125,6 +133,27 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\MainMenuHud\windowmodewhite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Run\1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Run\2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Run\3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Run\4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Run\6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Run\hit1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Run\hit2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\SandVillage.png">
@@ -238,6 +267,12 @@
 
   <ItemGroup>
     <Content Include="Images\HpBar\manabar5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\Run\5.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -247,7 +247,32 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             }
 
         }
+        public void RunMadara(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run", "1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 2:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run", "2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 3:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run", "3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 4:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run", "4.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 5:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run", "5.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 6:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run", "6.png"), UriKind.RelativeOrAbsolute)));
+                    break;
 
+            }
+
+        }
 
 
 
