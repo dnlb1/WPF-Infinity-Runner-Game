@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GUI_2022_23_01_UHPYQ8.Service
 {
-    public class Name 
+    public class Name : IName
     {
         public bool DialogResult { get; set; }
         public string GetName()
