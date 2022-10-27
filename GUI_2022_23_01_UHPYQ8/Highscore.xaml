@@ -10,7 +10,8 @@
       Title="Highscore"
       SizeChanged="Page_SizeChanged">
 
-    <Grid>
-        
+    <Grid x:Name="myGrid">
+        <Render:DisplayHighscore x:Name="myDisplay"></Render:DisplayHighscore>
+
     </Grid>
 </Page>
