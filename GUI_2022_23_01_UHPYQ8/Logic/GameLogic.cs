@@ -80,14 +80,27 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         {
             this.size = size;
         }
-        Size size;
-        public string Name { get; set; }
-        public bool Intro { get; set; }
-        public bool gameOver { get; set; } //vége van-e a játéknak
-        public bool EscON { get; set; }
-
-        public int score { get; set; }
-        public int hp { get; set; }
+        Random r { get; set; } = new Random();
+        public ImageBrush Background
+        {
+            get
+            {
+                return new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Background", "SandVillage.png"), UriKind.RelativeOrAbsolute)));
+            }
+            set { }
+        }
+        public ImageBrush playerSprite { get; set; }
+        public ImageBrush SkillOne { get; set; }
+        public ImageBrush SkillTwo { get; set; }
+        public ImageBrush obstacleSprite { get; set; }
+        public ImageBrush ManaBar { get; set; }
+        public ImageBrush HPBar { get; set; }
+        public ImageBrush EnemySprite { get; set; }
+        public ImageBrush PressStart { get; set; }
+        public SolidColorBrush Esc { get; set; }
+        public ImageBrush MadaraDead { get; set; }
+        public ImageBrush SkillDead { get; set; }
+        public ImageBrush Mana { get; set; }
         public MediaPlayer IntroMedia { get; set; } = new MediaPlayer();
         public MediaPlayer MainMusic { get; set; } = new MediaPlayer();
         public MediaPlayer clicksound { get; set; } = new MediaPlayer();
@@ -95,17 +108,91 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public MediaPlayer KatonFireStyle { get; set; } = new MediaPlayer();
         public MediaPlayer Susano { get; set; } = new MediaPlayer();
         public MediaPlayer HurtMadara { get; set; } = new MediaPlayer();
-
+        Size size;
         public event EventHandler Changed; //változott a background. akkor ÚJRA RAJZOLUNK
         System.Timers.Timer timer;
         System.Timers.Timer BonusMana;
         System.Timers.Timer Delay;
 
+        public string Name { get; set; }
 
+        bool recast { get; set; } = false;
+        bool music = false;
+        bool watermusic = false;
+        public bool Intro { get; set; }
+        public bool EscON { get; set; }
+        public bool jumping { get; set; }
+        public bool GoinDown { get; set; }
+        public bool Katon { get; set; }
+        bool down { get; set; }
+        public bool IsStanding { get; set; }
+        bool IsSkilledOne { get; set; }
+        bool IsSkilledTwo { get; set; }
+        bool Once { get; set; }
+        public bool IsInForm { get; set; }
+        public bool SkillShoot { get; set; }
+        public bool GoAfterSkill { get; set; }
+        public bool DisapearShuriken { get; set; }
+        public bool gameOver { get; set; } //vége van-e a játéknak
+        public bool enemyspawn { get; set; }
+        public bool youcanspawnenemy { get; set; }
+        public bool canjump { get; set; }
+        public bool ChaningBack { get; set; }
+        bool TopOrBot { get; set; }
+        public bool drawform { get; set; }
+        public bool DisapearMana { get; set; }
+        public bool SetHighScore { get; set; } //ha meghalt akkor ezzel jelezzük, majd úgy rajzolunk !
+        public bool Hitted { get; set; }
+        private bool MMEnded { get; set; }
+        public bool ManaChanche { get; set; }
 
+        public int score { get; set; }
+        public int hp { get; set; }
+        public int BackgroundMoveFirst { get; set; } = 10;
+        public int BackgroundMoveSecond { get; set; } = 10;
+        int counter;
+        public int chanche { get; set; }
+        public int mana { get; set; }
+        public int force { get; set; }//toljunk 20-al
+        public int speed { get; set; } //5-tel ugrik
+        public int BackgroundSpeed { get; set; }
+        public int ManaSpeed { get; set; }
+        public int ShurikenSpeed;
 
+        Rect PlayerHitbox; //Madara
+        Rect groundHitBox; //Föld
+        Rect obstacleHitbox; //Akadály
+        Rect manaHitbox; //Mana
+        Rect EnemyHitbox; //Enemy
+        Rect SkillHitbox; //Skill
 
+        public double Y { get; set; } //Madara
+        public double X { get; set; } //Madara
+        public double groundheight { get; set; }
 
+        public double ObstacleY { get; set; } //Shuriken
+        public double ObstacleX { get; set; } //Shuriken
+
+        public double ManaY { get; set; } //Mana
+        public double ManaX { get; set; } //Mana
+
+        public double SkillShootX { get; set; } //Shinobies
+        public double SkillShootY { get; set; } //Shinobies
+        private double old_skillx { get; set; }
+        private double old_skilly { get; set; }
+
+        public double EnemyX { get; set; }
+        public double EnemyY { get; set; }
+
+        double spriteIndex;
+        double susanoIndex;
+        double ShurikenIndex;
+        double SkillIndex;
+        double SkillTwoIndex;
+        double EnemyIndex;
+        double PressIndex;
+        double DeadMadaraIndex;
+        double TimeLimit;
 
         public enum ControlKey
         {
