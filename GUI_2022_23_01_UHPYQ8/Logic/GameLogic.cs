@@ -50,12 +50,30 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         }
         private void SpawnMana(object sender, System.Timers.ElapsedEventArgs e)
         {
+            if (r.Next(0, 1) == 0)//ez adja meg a chanchet 10mp.nként. 50% h spawnolhat
+            {
+                if (r.Next(0, 100) > 50)
+                {
+                    TopOrBot = true; //true top
+                }
+                ManaChanche = true;
+                BonusMana.Stop();
+            }
         }
         private void Delay_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
+            Delay.Stop();
+            ChaningBack = true;
         }
         private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
+            timer.Stop();
+            //30mp után ujra lehet ugrani.
+            //többet nem mehetünk formba
+            IsInForm = false;
+            canjump = false;
+            drawform = false;
+            ChaningBack = false;
         }
         private void HurtMadara_MediaEnded(object sender, EventArgs e)
         {
