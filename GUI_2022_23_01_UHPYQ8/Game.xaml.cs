@@ -126,7 +126,15 @@ namespace GUI_2022_23_01_UHPYQ8
 
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-          
+            if (logic != null)
+            {
+                Volume.Value = 0;
+                logic.MainMusic.Volume = 0;
+                logic.WaterSound.Volume = 0;
+                logic.KatonFireStyle.Volume = 0;
+                logic.IntroMedia.Volume = 0;
+                logic.HurtMadara.Volume = 0;
+            }
         }
         private void Image_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
         {
