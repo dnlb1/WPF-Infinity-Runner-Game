@@ -219,7 +219,34 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             }
 
         }
+        public void ManaBarChanged(double i)
+        {
+            switch (i)
+            {
+                case 0:
+                    ManaBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "manabar0.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 1:
+                    ManaBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "manabar1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 2:
+                    ManaBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "manabar2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 3:
+                    ManaBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "manabar3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 4:
+                    ManaBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "manabar4.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 5:
+                    ManaBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "manabar5.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                default:
+                    ManaBar = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/HpBar", "manabar5.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+            }
 
+        }
 
 
 
