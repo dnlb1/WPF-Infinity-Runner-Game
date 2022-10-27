@@ -133,9 +133,11 @@
     <None Remove="MenuBackground\Kunai5.png" />
     <None Remove="MenuBackground\MenuExit.png" />
     <None Remove="MenuBackground\MenuHighscore.png" />
+    <None Remove="MenuBackground\MenuHud1.png" />
     <None Remove="MenuBackground\MenuStart.png" />
     <None Remove="MenuBackground\MenuWaiting.png" />
     <None Remove="MenuBackground\MiniHubBackground.png" />
+    <None Remove="MenuBackground\Monitor.png" />
     <None Remove="MenuBackground\NameBackground.png" />
     <None Remove="MenuBackground\NameBck.jpg" />
     <None Remove="MenuBackground\off.png" />
@@ -513,6 +515,9 @@
     <Content Include="MenuBackground\MenuHighscore.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="MenuBackground\MenuHud1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="MenuBackground\MenuStart.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -520,6 +525,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="MenuBackground\MiniHubBackground.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MenuBackground\Monitor.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="MenuBackground\NameBackground.png">

@@ -21,7 +21,8 @@
         <ImageBrush x:Key="MenuWaiting" ImageSource="MenuBackground/MenuWaiting.png"></ImageBrush>
         <ImageBrush x:Key="ButtonOFF" ImageSource="MenuBackground/off.png"></ImageBrush>
         <ImageBrush x:Key="ButtonON" ImageSource="MenuBackground/on.png"></ImageBrush>
-
+        <FontFamily x:Key="naruto" >/Fonts/#Ninja Naruto</FontFamily>
+        
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
                 <Setter.Value>
@@ -286,23 +287,52 @@
 
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="1*"></RowDefinition>
-                <RowDefinition Height="2*"></RowDefinition>
-                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="10*"></RowDefinition>
+                <RowDefinition Height="20*"></RowDefinition>
+                <RowDefinition Height="10*"></RowDefinition>
             </Grid.RowDefinitions>
-            <StackPanel Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <StackPanel Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Height="175">
                 <StackPanel.Background>
-                    <ImageBrush ImageSource="MenuBackground/sandpng.png"/>
+                    <ImageBrush ImageSource="MenuBackground/MenuHud1.png"/>
                 </StackPanel.Background>
-                <Label  Content="{Binding ElementName=Volume, Path=Value}" ContentStringFormat=" {0} " Margin="20 0 0 0"
-                        FontFamily="Arial" FontWeight="Bold" Foreground="Black"></Label>
-                <Slider  x:Name="Volume" HorizontalAlignment="Right" Orientation="Vertical" Height="100" Margin="0 0 25 0"
-                Minimum="0" Maximum="100" Value="25" ValueChanged="Volume_ValueChanged" IsSnapToTickEnabled="True" >
-                </Slider>
-                <ToggleButton  Margin="0 0 10 0" Grid.Row="1" Style="{StaticResource ToggleButtonStyle1}" IsChecked="True" Checked="ToggleButton_Checked" Unchecked="IsMaxim_Unchecked"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*"></ColumnDefinition>
+                        <ColumnDefinition Width="10*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"></RowDefinition>
+                                <RowDefinition Height="1*"></RowDefinition>
+                                <RowDefinition Height="1*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="1" Content="{Binding ElementName=Volume, Path=Value}" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" HorizontalAlignment="Center" ContentStringFormat=" {0} " FontFamily="{StaticResource naruto}" FontWeight="Bold" Foreground="Black"></Label>
+                            <Slider  x:Name="Volume" HorizontalAlignment="Center" Orientation="Vertical" Height="100" Grid.Row="1"
+                         Minimum="0" Maximum="100" Value="25" ValueChanged="Volume_ValueChanged" IsSnapToTickEnabled="True" VerticalAlignment="Center" >
+                            </Slider>
+                            <ToggleButton Grid.Row="2"  Margin="0 0 8 0" Style="{StaticResource ToggleButtonStyle1}" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="True" Checked="ToggleButton_Checked" Unchecked="IsMaxim_Unchecked"/>
+                        </Grid>
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"></RowDefinition>
+                                <RowDefinition Height="1*"></RowDefinition>
+                                <RowDefinition Height="2*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"></ColumnDefinition>
+                                <ColumnDefinition Width="10*"></ColumnDefinition>
+                                <ColumnDefinition Width="3*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Row="0" Source="Images/MainMenuHud/volumeon.png" Height="10" Width="20" Margin="8 4 0 0" HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
+                            <Image Grid.Column="2" Grid.Row="0" Source="Images/MainMenuHud/volumeon.png" Height="10" Width="20" Margin="8 4 0 0" HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
+                            <Image Grid.Row="2" Source="MenuBackground/Monitor.png" Height="20" Width="20" Margin="8 0 0 0"></Image>
+                            <Image Grid.Column="2" Grid.Row="2" Source="MenuBackground/Monitor.png" Height="20" Width="20" Margin="10"></Image>
+                        </Grid>
+                    </Grid>
+
+                </Grid>
             </StackPanel>
         </Grid>
-
-
     </Grid>
 </Window>
