@@ -64,7 +64,9 @@ namespace GUI_2022_23_01_UHPYQ8
             dt = new DispatcherTimer();
             dt.Interval = TimeSpan.FromMilliseconds(30);
             dt.Tick += Engine;
-            dt.Start();
+            
+            window.Hide();
+            logic.Name = name.GetName();
         }
         private void Engine(object sender, EventArgs e)
         {
