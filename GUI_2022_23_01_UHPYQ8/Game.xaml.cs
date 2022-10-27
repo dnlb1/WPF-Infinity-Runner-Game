@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace GUI_2022_23_01_UHPYQ8
 {
@@ -25,6 +26,7 @@ namespace GUI_2022_23_01_UHPYQ8
         MainWindow window;
         SoundPlayer clicksound = new SoundPlayer(System.IO.Path.Combine("Music", "ClickSound.wav"));
         IName name;
+        DispatcherTimer dt;
         public Game(MainWindow w)
         {
             InitializeComponent();
