@@ -2,6 +2,7 @@
 using GUI_2022_23_01_UHPYQ8.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,13 @@ namespace GUI_2022_23_01_UHPYQ8
             this.py = py;
             vm.SetUp(py);
             this.DataContext = vm;
+        }
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            //Mentse ki TXT-be
+            string Save = py.Rank + "#" + py.WhenStarted + "#" + py.Name + "#" + py.Score + "\r";
+            File.AppendAllText(System.IO.Path.Combine("RankList", "Rank.txt"), Save);
+            DialogResult = true;
         }
     }
 }
