@@ -31,6 +31,7 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         Size size;
         public string Name { get; set; }
         public bool Intro { get; set; }
+        public bool gameOver { get; set; } //vége van-e a játéknak
         public MediaPlayer IntroMedia { get; set; } = new MediaPlayer();
         public MediaPlayer MainMusic { get; set; } = new MediaPlayer();
         public MediaPlayer clicksound { get; set; } = new MediaPlayer();
@@ -38,8 +39,6 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public MediaPlayer KatonFireStyle { get; set; } = new MediaPlayer();
         public MediaPlayer Susano { get; set; } = new MediaPlayer();
         public MediaPlayer HurtMadara { get; set; } = new MediaPlayer();
-
-
 
         public event EventHandler Changed; //változott a background. akkor ÚJRA RAJZOLUNK
 
