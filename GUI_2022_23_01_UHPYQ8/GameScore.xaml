@@ -9,6 +9,11 @@
         Title="GameScore" Height="450" Width="800"
         WindowState="Maximized"
         Cursor="Cursors/minato_normal_select_animated.ani">
+    <Window.Resources>
+        <ImageBrush x:Key="Brush" ImageSource="MenuBackground/ecset2.png"></ImageBrush>
+        <ImageBrush x:Key="BrushBlack" ImageSource="MenuBackground/ecset1.png"></ImageBrush>
+        <FontFamily x:Key="naruto" >/Fonts/#Ninja Naruto</FontFamily>
+    </Window.Resources>
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="MenuBackground/NameBackground.png"></ImageBrush>
@@ -23,5 +28,6 @@
             <RowDefinition Height="10*"></RowDefinition>
             <RowDefinition Height="8*"></RowDefinition>
         </Grid.RowDefinitions>
+        
     </Grid>
 </Window>
