@@ -36,6 +36,9 @@
                     <RowDefinition Height="40*"></RowDefinition>
                     <RowDefinition Height="1*"></RowDefinition>
                 </Grid.RowDefinitions>
+                <Viewbox Grid.Row="1">
+                    <Label Content="Game Rules" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40" FontFamily="{StaticResource naruto}" Background="{x:Null}" Foreground="#FF151515"></Label>
+                </Viewbox>
             </Grid>
         </Grid>
     </Grid>
