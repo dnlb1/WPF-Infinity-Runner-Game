@@ -28,7 +28,18 @@
         </Grid.ColumnDefinitions>
         <GP:GameDisplay x:Name="myDisplay"></GP:GameDisplay>
         <Grid Grid.Column="1" Grid.Row="1" x:Name="ScoreTable">
-            
+            <Grid x:Name="menuGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="24*"></RowDefinition>
+                    <RowDefinition Height="24*"></RowDefinition>
+                    <RowDefinition Height="24*"></RowDefinition>
+                    <RowDefinition Height="24*"></RowDefinition>
+                    <RowDefinition Height="4*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/MainMenuHud/MenuBack.png"></ImageBrush>
+                </Grid.Background>
+            </Grid>
         </Grid>
     </Grid>
 </Page>
