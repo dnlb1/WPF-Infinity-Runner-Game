@@ -39,7 +39,18 @@ namespace GUI_2022_23_01_UHPYQ8.ViewModel
 
         public NameWindowViewModel(Window window)
         {
-
+            if (!IsInDesign)
+            {
+                Ok = new RelayCommand(() =>
+                {
+                    IsPressed = true;
+                    window.DialogResult = true;
+                },
+                 () =>
+                 {
+                     return EnteredName != null && EnteredName != "" && EnteredName != " ";
+                 });
+            }
         }
     }
 }
