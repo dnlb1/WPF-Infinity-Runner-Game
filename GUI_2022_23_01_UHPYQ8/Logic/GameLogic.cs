@@ -656,7 +656,6 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
                 SkillIndex = 0;
             }
         }
-
         private void ShurikenMovement()
         {
 
@@ -716,7 +715,23 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
                 manaHitbox = new Rect(ManaX, ManaY, size.Width / 10, size.Height / 10);
             }
         }
+        private void MadaraWaitingStart() //+presstart
+        {
+            spriteIndex += .5;
+            if (spriteIndex > 28)
+            {
+                spriteIndex = 1;
+            }
+            StandMadara(spriteIndex);
 
+            PressIndex += .5;
+            if (PressIndex > 80)
+            {
+                PressIndex = 1;
+            }
+            PressEnterI(PressIndex);
+
+        }
 
         public enum ControlKey
         {
