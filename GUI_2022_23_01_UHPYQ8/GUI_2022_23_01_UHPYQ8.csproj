@@ -36,6 +36,7 @@
     <None Remove="MenuBackground\Ranglist.png" />
     <None Remove="MenuBackground\sandhub.jpg" />
     <None Remove="MenuBackground\sandpng.png" />
+    <None Remove="Music\ListMusic.wav" />
     <None Remove="Videos\Goakyou.mp4" />
     <None Remove="Videos\Intro.mp4" />
     <None Remove="Videos\MadaraIntro.mp4" />
@@ -128,6 +129,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="MenuBackground\sandpng.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\ListMusic.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Videos\Goakyou.mp4">
