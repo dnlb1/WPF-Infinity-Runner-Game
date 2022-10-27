@@ -579,6 +579,25 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
                     break;
             }
         }
+        public void ShurikenMove(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    obstacleSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Shuriken", "shuriken1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 4:
+                    obstacleSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Shuriken", "shuriken2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 7:
+                    obstacleSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Shuriken", "shuriken1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 10:
+                    obstacleSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Shuriken", "shuriken2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+            }
+
+        }
         public enum ControlKey
         {
             space,

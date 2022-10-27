@@ -98,6 +98,8 @@
     <None Remove="Images\Run\Transform\transform8.png" />
     <None Remove="Images\SandVillage.png" />
     <None Remove="Images\scroll.jpg" />
+    <None Remove="Images\Shuriken\shuriken1.png" />
+    <None Remove="Images\Shuriken\shuriken2.png" />
     <None Remove="Images\SkillShoot\10s.png" />
     <None Remove="Images\SkillShoot\1s.png" />
     <None Remove="Images\SkillShoot\2s.png" />
@@ -394,6 +396,9 @@
     <Content Include="Images\scroll.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Shuriken\shuriken1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\SkillShoot\10s.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -562,6 +567,12 @@
 
   <ItemGroup>
     <Content Include="Images\Run\ChangeBack\9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\Shuriken\shuriken2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
