@@ -118,7 +118,13 @@
                     </TextBox>
                 </Viewbox>
             </Grid>
-            
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                    <ColumnDefinition Width="3.2*"></ColumnDefinition>
+                    <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
