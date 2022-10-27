@@ -4,8 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_2022_23_01_UHPYQ8"
+        xmlns:VM="clr-namespace:GUI_2022_23_01_UHPYQ8.ViewModel"
         mc:Ignorable="d"
-        Title="GameScore" Height="450" Width="800">
+        Title="GameScore" Height="450" Width="800"
+        WindowState="Maximized"
+        Cursor="Cursors/minato_normal_select_animated.ani">
     <Grid>
         
     </Grid>
