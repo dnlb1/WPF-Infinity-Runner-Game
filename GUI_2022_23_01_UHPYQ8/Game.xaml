@@ -54,6 +54,14 @@
                         <ColumnDefinition Width="1*"></ColumnDefinition>
                         <ColumnDefinition Width="1*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="4*"></ColumnDefinition>
+                            <ColumnDefinition Width="32*"></ColumnDefinition>
+                            <ColumnDefinition Width="32*"></ColumnDefinition>
+                            <ColumnDefinition Width="32*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>
