@@ -16,6 +16,16 @@
       >
 
     <Grid x:Name="myGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
         <GP:GameDisplay x:Name="myDisplay"></GP:GameDisplay>
     </Grid>
 </Page>
