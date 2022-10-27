@@ -22,10 +22,34 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
 
             hp = 5;
 
+
+            WaterSound.MediaEnded += WaterSound_MediaEnded;
+            HurtMadara.MediaEnded += HurtMadara_MediaEnded;
+            Susano.MediaEnded += Susano_MediaEnded;
+
+            Susano.Open(new Uri(System.IO.Path.Combine("Music", "Susano.mp3"), UriKind.RelativeOrAbsolute));
+            MainMusic.Open(new Uri(System.IO.Path.Combine("Music", "MainGameTheme.wav"), UriKind.RelativeOrAbsolute));
+            HurtMadara.Open(new Uri(System.IO.Path.Combine("Music", "hurtmadara.wav"), UriKind.RelativeOrAbsolute));
+            HurtMadara.Volume = 0.9;
             IntroMedia.Open(new Uri(System.IO.Path.Combine("Videos", "Intro.mp4"), UriKind.RelativeOrAbsolute));
             IntroMedia.MediaEnded += IntroMedia_MediaEnded;
         }
 
+        private void HurtMadara_MediaEnded(object sender, EventArgs e)
+        {
+            HurtMadara.Stop();
+            HurtMadara.Position = TimeSpan.Zero;
+        }
+        private void WaterSound_MediaEnded(object sender, EventArgs e)
+        {
+            WaterSound.Stop();
+            WaterSound.Position = TimeSpan.Zero;
+        }
+        private void Susano_MediaEnded(object sender, EventArgs e)
+        {
+            Susano.Stop();
+            Susano.Position = TimeSpan.Zero;
+        }
         private void IntroMedia_MediaEnded(object sender, EventArgs e)
         {
             Intro = true;
