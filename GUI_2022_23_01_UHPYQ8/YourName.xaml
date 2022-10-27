@@ -12,6 +12,7 @@
     <Window.Resources>
         <FontFamily x:Key="naruto" >/Fonts/#Ninja Naruto</FontFamily>
         <ImageBrush x:Key="Brush" ImageSource="MenuBackground/ecset2.png"></ImageBrush>
+        <ImageBrush x:Key="BrushBlack" ImageSource="MenuBackground/ecset1.png"></ImageBrush>
 
     </Window.Resources>
     <Grid>
