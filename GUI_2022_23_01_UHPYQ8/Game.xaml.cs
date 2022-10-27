@@ -54,6 +54,14 @@ namespace GUI_2022_23_01_UHPYQ8
         {
             
         }
+        private void Button_Click(object sender, RoutedEventArgs e) //Vigyen vissza Main-ba
+        {
+           
+        }
+        private void Button_Click_1(object sender, RoutedEventArgs e) //Resume 
+        {
+           
+        }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
            
