@@ -400,6 +400,74 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             }
 
         }
+        public void SkillTwoMadara(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jutsu", "jutsu1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 3:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jutsu", "jutsu1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 5:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jutsu", "jutsu2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 7:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jutsu", "jutsu2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 9:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 10:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 12:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 13:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 15:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 16:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 18:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform4.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 19:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform4.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 21:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform5.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 22:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform5.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 24:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform6.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 25:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform6.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 27:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform7.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 28:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform7.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 30:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform8.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 31:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Transform", "transform8.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+
+            }
+
+        } //SkillTwo
 
         public enum ControlKey
         {
