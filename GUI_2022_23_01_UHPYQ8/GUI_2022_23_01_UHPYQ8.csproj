@@ -10,6 +10,7 @@
     <None Remove="Cursors\Brush.ani" />
     <None Remove="Cursors\minato_normal_select_animated.ani" />
     <None Remove="Cursors\minato_shuriken_busy.ani" />
+    <None Remove="Fonts\njnaruto.ttf" />
     <None Remove="Images\MainMenuHud\exit2.png" />
     <None Remove="Images\MainMenuHud\ExitWhite.png" />
     <None Remove="Images\MainMenuHud\MenuBack.png" />
@@ -52,6 +53,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Cursors\minato_shuriken_busy.ani">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\njnaruto.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\MainMenuHud\exit2.png">
