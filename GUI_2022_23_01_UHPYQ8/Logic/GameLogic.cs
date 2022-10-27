@@ -32,7 +32,21 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public string Name { get; set; }
         public bool Intro { get; set; }
         public MediaPlayer IntroMedia { get; set; } = new MediaPlayer();
+        public MediaPlayer MainMusic { get; set; } = new MediaPlayer();
+        public MediaPlayer clicksound { get; set; } = new MediaPlayer();
+        public MediaPlayer WaterSound { get; set; } = new MediaPlayer();
+        public MediaPlayer KatonFireStyle { get; set; } = new MediaPlayer();
+        public MediaPlayer Susano { get; set; } = new MediaPlayer();
+        public MediaPlayer HurtMadara { get; set; } = new MediaPlayer();
+
+
+
         public event EventHandler Changed; //változott a background. akkor ÚJRA RAJZOLUNK
+
+
+
+
+
 
         public enum ControlKey
         {
