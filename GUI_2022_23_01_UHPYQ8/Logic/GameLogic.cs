@@ -72,6 +72,22 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             Susano.Stop();
             Susano.Position = TimeSpan.Zero;
         }
+        private void MainMusic_MediaEnded(object sender, EventArgs e)
+        {
+            MainMusic.Position = TimeSpan.Zero;
+            if (!MMEnded && !EscON)
+            {
+                BackgroundSpeed = 30;
+                ManaSpeed = 30;
+                MMEnded = true;
+                Changed?.Invoke(this, null);
+            }
+            if (ShurikenSpeed > 80)
+            {
+                ShurikenSpeed += 10;
+            }
+            MainMusic.Play();
+        } 
         private void IntroMedia_MediaEnded(object sender, EventArgs e)
         {
             Intro = true;
@@ -834,15 +850,303 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         }
         public void GameEngine()
         {
-            if (hp >1)
+            if (hp > 1) //meghalt hha eléri az 1-et --> mehet a dead animacio 
             {
-                if (!EscON)
-                {
 
+                if (!EscON) //escon true
+                {
+                    if (Intro)
+                    {
+                        if (!music)
+                        {
+                            MainMusic.Position = new TimeSpan(0, 0, 49);
+                            MainMusic.Play();
+                            MainMusic.MediaEnded += MainMusic_MediaEnded;
+                            music = true;
+                        }
+                        HpBarChanged(hp);
+                        ManaBarChanged(mana);
+                        if (IsStanding && !IsSkilledOne && !GoAfterSkill && !IsSkilledTwo)
+                        {
+                            BackgroundMoveFirst += BackgroundSpeed;
+                            BackgroundMoveSecond += BackgroundSpeed; //1865
+
+                            if (BackgroundMoveFirst > 3450) //ha nagyobb mint 3450- akkor tudjuk, hogy eltoltuk. Mehet a végére.
+                            {
+                                if (!MMEnded)
+                                {
+                                    BackgroundMoveFirst = -3440; //azért 40 mert közbe tolódik 1-et
+                                }
+                                else
+                                {
+                                    BackgroundMoveFirst = -3420;
+                                }
+
+                            }
+
+                            if (BackgroundMoveSecond > 6900)
+                            {
+                                if (!MMEnded)
+                                {
+                                    BackgroundMoveSecond = 10;
+                                }
+                                else
+                                {
+                                    BackgroundMoveSecond = 30;
+                                }
+                            }
+
+                            if (jumping) //ugrok hha nincs közös pont
+                            {
+                                Y -= 20;
+                            }
+
+                            if (Y > (size.Height / 2 * 0.2) * 2 && Y < (size.Height / 2 * 0.2) * 2.5 && !down)
+                            {
+                                playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jump", "jump0.png"), UriKind.RelativeOrAbsolute)));
+                                Changed?.Invoke(this, null);
+                            }
+
+                            if (Y < size.Height / 2 * 0.2 && !down) //elérem a tetejét - jumping kikapcsol és ereszkedni kéne
+                            {
+                                jumping = false;
+                                playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jump", "jump2.png"), UriKind.RelativeOrAbsolute)));
+                                down = true;
+                                Changed?.Invoke(this, null);
+                            }
+
+                            PlayerHitbox = new Rect(X, Y, size.Height / 4, size.Height / 4);
+                            groundHitBox = new Rect(0, groundheight, size.Width, 1);
+                            bool x = PlayerHitbox.IntersectsWith(groundHitBox);
+
+                            if (down && !x)
+                            {
+
+                                if (GoinDown && counter % 3 == 0)
+                                {
+                                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jump", "jump3.png"), UriKind.RelativeOrAbsolute)));
+                                    GoinDown = false;
+                                    Changed?.Invoke(this, null);
+                                }
+                                Y += 20;//elsőre lemenni
+                                counter += 1;
+                                GoinDown = true;
+                            }
+                            else
+                            {
+                                down = false;
+                            }
+
+                            if (x)
+                            {
+                                down = false;
+                                speed = 0;
+                                jumping = false;
+                                if (!IsInForm)
+                                {
+                                    spriteIndex += 0.5;
+                                    if (spriteIndex > 6)
+                                    {
+                                        spriteIndex = 1;
+                                    }
+                                    RunMadara(spriteIndex);
+
+                                    if (Hitted)
+                                    {
+                                        if (!jumping)
+                                        {
+                                            playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run", "hit2.png"), UriKind.RelativeOrAbsolute)));
+                                            Hitted = false;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+
+                                    susanoIndex += 0.5;
+                                    if (susanoIndex > 16)
+                                    {
+                                        susanoIndex = 1;
+                                    }
+
+                                    if (ChaningBack) //true
+                                    {
+                                        ChangeBackForm(susanoIndex);
+                                    }
+                                    else
+                                    {
+                                        InForm(susanoIndex);
+                                    }
+
+                                }
+                            }
+
+                        }
+                        else if (!IsStanding) //Madara várakozik, hogy elinduljon a game.
+                        {
+                            MadaraWaitingStart();
+                        }
+
+
+                        if (IsSkilledOne)
+                        {
+                            if (!IsInForm)
+                            {
+                                spriteIndex += 0.5;
+                                if (spriteIndex > 20)
+                                {
+                                    IsSkilledOne = false; //animáció vége
+                                                          //Katoon-nak vége ezután kilőjük magát a skillt
+                                    SkillShoot = true;
+                                }
+                                SkillOneMadara(spriteIndex);
+                            }
+                            else
+                            {
+                                IsSkilledOne = false;
+                                SkillShoot = true;
+                            }
+
+                        }
+
+                        if (IsSkilledTwo)
+                        {
+                            canjump = true;
+                            if (SkillTwoIndex > 31)
+                            {
+                                IsSkilledTwo = false; //animáció vége bemegyünk formba
+                                Once = false;
+                                IsInForm = true;
+                                SkillTwoIndex = 0;
+                                timer.Start();
+                                Delay.Start();
+                            }
+                            SkillTwoMadara(SkillTwoIndex);
+                            SkillTwoIndex += 0.5;
+                            if (SkillTwoIndex > 9)
+                            {
+                                drawform = true;
+                            }
+                        }
+
+                        //miután kirajzolódott a fireball mehetunk előtte 1 picivel mehetünk.
+                        if (SkillShoot)
+                        {
+                            GoAfterSkill = false;
+                            if (recast)
+                            {
+                                SkillShootX = old_skillx;
+                                SkillShootY = old_skilly;
+                                recast = false;
+                            }
+
+                            if (SkillShootX > size.Width * 1.1)
+                            {
+                                //Hide de ki is kell rajzolni.
+                                SkillShootX = 0 - size.Width;
+                                SkillShootY = 0 - size.Height;
+                            }
+                            else
+                            {
+                                //csúsztassuk
+                                SkillShootX += 50;
+                                SkillHitbox = new Rect(SkillShootX, SkillShootY, size.Width / 3 + 20, size.Height / 3 + 20);
+                                SkillMovement();
+
+                            }
+                            if (SkillShootX > size.Width * 1.1) //ha már eltalt 1 enemy-t vagy kiért a mezőből
+                            {
+                                SkillShoot = false;
+                                recast = true;
+                            }
+                        }
+                        //shuriken mozgás
+                        if (IsStanding && !IsSkilledTwo) //Shuriken move és logic
+                        {
+                            if (youcanspawnenemy)
+                            {
+                                EnemyMovement();
+                            }
+                            else
+                            {
+
+                                ShurikenMovement();
+                                if (PlayerHitbox.IntersectsWith(obstacleHitbox) && !DisapearShuriken)
+                                {
+                                    DisapearShuriken = true;
+                                    if (IsSkilledOne)
+                                    {
+                                        playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jutsu", "jutsuhit.png"), UriKind.RelativeOrAbsolute)));
+                                    }
+                                    else
+                                    {
+                                        if (!jumping && !IsInForm)
+                                        {
+                                            playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run", "hit1.png"), UriKind.RelativeOrAbsolute)));
+                                            Hitted = true;
+
+                                        }
+                                    }
+                                    HpBarChanged(hp);
+                                    if (!IsInForm)
+                                    {
+                                        hp -= 1;
+                                        HpBarChanged(hp);
+                                        HurtMadara.Play();
+                                    }
+                                }
+                            }
+
+                            if (ManaChanche && !IsInForm && !IsSkilledOne) //50% esély a spawnolásra - lassabban mozogjon mint a shuriken
+                            {
+                                //ha igaz akkor spawnolhat
+                                ManaMovement();
+                                if (PlayerHitbox.IntersectsWith(manaHitbox) && !DisapearMana)
+                                {
+                                    if (mana < 5)
+                                    {
+                                        mana++;
+                                        if (mana == 5)
+                                        {
+                                            Once = true; //újra tudja használni!
+                                        }
+                                    }
+                                    ManaX = size.Width * 1.5;
+                                    DisapearMana = true;
+                                    ManaChanche = false; //kikapcsoolom hha vége az animacionak és elindítom a timert megint
+                                    BonusMana.Start();
+                                    TopOrBot = false;
+                                    ManaMove(r.Next(1, 6));
+                                }
+                            }
+                            if (IsInForm)
+                            {
+                                ManaX = size.Width * 1.5;
+                            }
+                        }
+                    }
                 }
             }
+            else
+            {
+                if (TimeLimit > 7) //7*30ms = 210ms = 2.1mp
+                {
+                    //dead animacio
+                    //kis delay kellene
+                    DeadMadaraIndex += 0.5;
+                    if (DeadMadaraIndex > 95)
+                    {
+                        gameOver = true;
+                    }
+                    DeadMadara(DeadMadaraIndex);
+                }
+                else
+                {
+                    TimeLimit += 1;
+                }
+            }
+            Changed?.Invoke(this, null);
         }
-
 
     }
 }
