@@ -19,6 +19,7 @@ namespace GUI_2022_23_01_UHPYQ8.Render
             InvalidateVisual();
         }
 
+
         protected override void OnRender(DrawingContext drawingContext)
         {
             base.OnRender(drawingContext);

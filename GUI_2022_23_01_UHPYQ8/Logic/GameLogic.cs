@@ -32,5 +32,6 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public string Name { get; set; }
         public bool Intro { get; set; }
         public MediaPlayer IntroMedia { get; set; } = new MediaPlayer();
+        public event EventHandler Changed; //változott a background. akkor ÚJRA RAJZOLUNK
     }
 }
