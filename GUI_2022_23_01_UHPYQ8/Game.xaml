@@ -73,16 +73,19 @@
                         </Slider>
                         <Image Grid.Column="3" Source="Images/MainMenuHud/volumeon.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_1"></Image>
                     </Grid>
-                    
+
                     <Button x:Name="WindowModeButton"  Grid.Column="1" Margin="40 10 40 10" Click="Button_Click_2" BorderThickness="0" BorderBrush="Transparent"
                             Cursor="Cursors/minato_shuriken_busy.ani">
                         <Button.Background>
                             <ImageBrush ImageSource="Images/MainMenuHud/windowmode2.png"></ImageBrush>
                         </Button.Background>
                     </Button>
-
-
                 </Grid>
+                <Button x:Name="ResumeButton" Cursor="Cursors/minato_shuriken_busy.ani" Grid.Row="2" Margin="150 10 150 10" Click="Button_Click_1" BorderBrush="Transparent" BorderThickness="0">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Images/MainMenuHud/resume2.png"></ImageBrush>
+                    </Button.Background>
+                </Button>
             </Grid>
         </Grid>
     </Grid>
