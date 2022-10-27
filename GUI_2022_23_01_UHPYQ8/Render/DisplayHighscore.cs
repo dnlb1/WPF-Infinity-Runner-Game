@@ -22,5 +22,10 @@ namespace GUI_2022_23_01_UHPYQ8.Render
                 return new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", "scroll.jpg"), UriKind.RelativeOrAbsolute)));
             }
         }
+        public void Resize(Size size)
+        {
+            this.size = size;
+            InvalidateVisual();
+        }
     }
 }
