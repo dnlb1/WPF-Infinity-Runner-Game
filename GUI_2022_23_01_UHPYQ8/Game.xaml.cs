@@ -32,6 +32,7 @@ namespace GUI_2022_23_01_UHPYQ8
             InitializeComponent();
             this.window = w;
             this.name = new Name();
+            menuGrid.Visibility = Visibility.Hidden;
         }
 
         private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
