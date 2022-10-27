@@ -32,6 +32,9 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public string Name { get; set; }
         public bool Intro { get; set; }
         public bool gameOver { get; set; } //vége van-e a játéknak
+
+        public int score { get; set; }
+
         public MediaPlayer IntroMedia { get; set; } = new MediaPlayer();
         public MediaPlayer MainMusic { get; set; } = new MediaPlayer();
         public MediaPlayer clicksound { get; set; } = new MediaPlayer();
