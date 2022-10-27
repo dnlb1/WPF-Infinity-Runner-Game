@@ -42,6 +42,30 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             enter, //később new game
             esc //back to main menu
         }
+        public void Control(ControlKey key)
+        {
+            switch (key)
+            {
+                case ControlKey.space:
+                   
+                    break;
+                case ControlKey.skillone:
+                    
+                    break;
+                case ControlKey.enter:
+                    
+                    break;
+                case ControlKey.esc:
+                   
+                    break;
+                case ControlKey.skilltwo:
+                    
+                    break;
+
+                default:
+                    break;
+            }
+        }
 
     }
 }
