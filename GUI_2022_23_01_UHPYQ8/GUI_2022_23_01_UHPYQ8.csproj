@@ -41,6 +41,9 @@
     <None Remove="Images\Run\hit2.png" />
     <None Remove="Images\SandVillage.png" />
     <None Remove="Images\scroll.jpg" />
+    <None Remove="Images\Stand\stand1.png" />
+    <None Remove="Images\Stand\stand2.png" />
+    <None Remove="Images\Stand\stand3.png" />
     <None Remove="MenuBackground\ecset1.png" />
     <None Remove="MenuBackground\ecset2.png" />
     <None Remove="MenuBackground\Kunai5.png" />
@@ -160,6 +163,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\scroll.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Stand\stand1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Stand\stand2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Stand\stand3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="MenuBackground\ecset1.png">

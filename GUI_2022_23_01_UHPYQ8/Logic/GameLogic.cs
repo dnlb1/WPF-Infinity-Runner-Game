@@ -273,7 +273,29 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             }
 
         }
+        public void StandMadara(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Stand", "stand3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 7:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Stand", "stand2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 14:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Stand", "stand1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 21:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Stand", "stand2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 28:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Stand", "stand3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
 
+            }
+
+        }
 
 
         public enum ControlKey
