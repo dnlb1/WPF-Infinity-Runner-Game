@@ -38,5 +38,8 @@
                 </Label.Foreground>
             </Label>
         </Viewbox>
+        <Viewbox  Grid.Row="1" Grid.Column="1" >
+            <Label x:Name="Score" Content="{Binding py.Score,UpdateSourceTrigger=PropertyChanged}" ContentStringFormat="Score: {0}" VerticalAlignment="Center" FontSize="30" FontFamily="{StaticResource naruto}"></Label>
+        </Viewbox>
     </Grid>
 </Window>
