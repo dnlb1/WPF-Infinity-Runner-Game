@@ -145,6 +145,7 @@ namespace GUI_2022_23_01_UHPYQ8
         private void Button_Click_1(object sender, RoutedEventArgs e) //Resume 
         {
             menuGrid.Visibility = Visibility.Hidden;
+            logic.Control(GameLogic.ControlKey.esc);
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
