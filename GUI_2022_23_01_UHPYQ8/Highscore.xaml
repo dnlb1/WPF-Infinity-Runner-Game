@@ -142,7 +142,7 @@
                 <ColumnDefinition Width="2*"></ColumnDefinition>
                 <ColumnDefinition Width="10*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" FontSize="20" Click="Button_Click"
+            <Button Grid.Column="0" Style="{DynamicResource ExitButton}" FontSize="20" Click="Button_Click"
                     BorderBrush="Transparent" BorderThickness="0">
                 <Button.Background>
                     <ImageBrush ImageSource="MenuBackground/Kunai5.png"/>
