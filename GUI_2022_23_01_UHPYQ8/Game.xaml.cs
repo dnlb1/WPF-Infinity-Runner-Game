@@ -54,8 +54,17 @@ namespace GUI_2022_23_01_UHPYQ8
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            dt = new DispatcherTimer();
+            dt.Interval = TimeSpan.FromMilliseconds(30);
+            dt.Tick += Engine;
+            dt.Start();
+        }
+        private void Engine(object sender, EventArgs e)
+        {
 
         }
+
+
 
         private void Page_KeyDown(object sender, KeyEventArgs e)
         {
@@ -78,6 +87,7 @@ namespace GUI_2022_23_01_UHPYQ8
         private void Button_Click(object sender, RoutedEventArgs e) //Vigyen vissza Main-ba
         {
             clicksound.Play();
+            dt.Stop(); 
             window.GoBackToStartPage();
         }
         private void Button_Click_1(object sender, RoutedEventArgs e) //Resume 
