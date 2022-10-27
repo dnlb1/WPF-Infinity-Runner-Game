@@ -598,6 +598,28 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             }
 
         }
+        public void ManaMove(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    Mana = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Mana", "sushi1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 2:
+                    Mana = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Mana", "sushi2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 3:
+                    Mana = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Mana", "sushi3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 4:
+                    Mana = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Mana", "sushi4.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 5:
+                    Mana = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Mana", "sushi5.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+            }
+
+        }
         public enum ControlKey
         {
             space,

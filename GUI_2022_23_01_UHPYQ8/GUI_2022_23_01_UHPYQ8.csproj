@@ -50,6 +50,11 @@
     <None Remove="Images\MainMenuHud\volumeon.png" />
     <None Remove="Images\MainMenuHud\windowmode2.png" />
     <None Remove="Images\MainMenuHud\windowmodewhite.png" />
+    <None Remove="Images\Mana\sushi1.png" />
+    <None Remove="Images\Mana\sushi2.png" />
+    <None Remove="Images\Mana\sushi3.png" />
+    <None Remove="Images\Mana\sushi4.png" />
+    <None Remove="Images\Mana\sushi5.png" />
     <None Remove="Images\PressEnter\press1.png" />
     <None Remove="Images\PressEnter\press10.png" />
     <None Remove="Images\PressEnter\press2.png" />
@@ -262,6 +267,21 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\MainMenuHud\windowmodewhite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Mana\sushi1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Mana\sushi2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Mana\sushi3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Mana\sushi4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Mana\sushi5.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\PressEnter\press1.png">
