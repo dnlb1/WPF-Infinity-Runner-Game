@@ -160,7 +160,14 @@ namespace GUI_2022_23_01_UHPYQ8
         }
         private void Volume_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-           
+            if (logic != null)
+            {
+                logic.MainMusic.Volume = (Volume.Value / 100) / 2;
+                logic.WaterSound.Volume = Volume.Value / 100;
+                logic.KatonFireStyle.Volume = Volume.Value / 100;
+                logic.IntroMedia.Volume = Volume.Value / 100;
+                logic.HurtMadara.Volume = Volume.Value / 100;
+            }
         }
     }
 }
