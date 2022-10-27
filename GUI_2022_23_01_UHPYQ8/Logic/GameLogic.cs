@@ -732,7 +732,74 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             PressEnterI(PressIndex);
 
         }
+        private void EnemyMovement()
+        {
+            if (!watermusic)
+            {
+                WaterSound.Play();
+                watermusic = true;
+            }
+            //csúsztatunk ellenkező esetben
 
+            if (PlayerHitbox.IntersectsWith(EnemyHitbox))
+            {
+                EnemyX = size.Width * 1.5;
+                EnemyHitbox = new Rect(EnemyX, EnemyY, size.Width / 3, size.Width / 3);
+                HpBarChanged(hp);
+                if (IsSkilledOne)
+                {
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jutsu", "jutsuhit.png"), UriKind.RelativeOrAbsolute)));
+                }
+                else
+                {
+                    if (!jumping && !IsInForm)
+                    {
+                        playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run", "hit1.png"), UriKind.RelativeOrAbsolute)));
+                        Hitted = true;
+                    }
+                }
+                if (!IsInForm)
+                {
+                    hp -= 1;
+                    HpBarChanged(hp);
+                    HurtMadara.Play();
+                }
+                youcanspawnenemy = false;
+                watermusic = false;
+            }
+            else if (SkillShoot && SkillHitbox.IntersectsWith(EnemyHitbox))
+            {
+
+                double x = size.Width / 3.5;
+                EnemyX = size.Width * 1.5;
+                EnemyHitbox = new Rect(EnemyX, EnemyY, size.Width / 3, size.Width / 3);
+                //Ezutan rajzoljuk ki erre a 2 koordinátára 1
+                //kis ködöt!
+                SkillShootX = 0 - size.Width;
+                SkillShootY = 0 - size.Height;
+                SkillIndex = 0;
+                recast = true;
+                SkillShoot = false;
+                SkillHitbox = new Rect(SkillShootX, SkillShootY, size.Width / 3 + 20, size.Height / 3 + 20);
+                score += 1;
+                youcanspawnenemy = false;
+                watermusic = false;
+
+            }
+            else
+            {
+                youcanspawnenemy = true;
+                EnemyX = EnemyX - 20;
+                EnemyIndex += 0.5;
+                EnemyHitbox = new Rect(EnemyX, EnemyY, size.Width / 3, size.Width / 3);
+                if (EnemyIndex > 12)
+                {
+                    EnemyIndex = 0.5;
+                }
+                EnemyMove(EnemyIndex);
+            }
+
+        }
         public enum ControlKey
         {
             space,
