@@ -17,11 +17,10 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public GameLogic()
         {
 
-
-
+            Intro = false;
+            EscON = false;
 
             hp = 5;
-
 
             IntroMedia.Open(new Uri(System.IO.Path.Combine("Videos", "Intro.mp4"), UriKind.RelativeOrAbsolute));
             IntroMedia.MediaEnded += IntroMedia_MediaEnded;
@@ -89,7 +88,10 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         {
             if (hp >1)
             {
+                if (!EscON)
+                {
 
+                }
             }
         }
 
