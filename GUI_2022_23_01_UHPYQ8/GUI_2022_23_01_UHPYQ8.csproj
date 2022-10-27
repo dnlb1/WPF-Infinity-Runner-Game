@@ -118,6 +118,11 @@
     <None Remove="Images\Stand\stand1.png" />
     <None Remove="Images\Stand\stand2.png" />
     <None Remove="Images\Stand\stand3.png" />
+    <None Remove="Images\Water\water1.png" />
+    <None Remove="Images\Water\water2.png" />
+    <None Remove="Images\Water\water3.png" />
+    <None Remove="Images\Water\water4.png" />
+    <None Remove="Images\Water\water9.png" />
     <None Remove="MenuBackground\ecset1.png" />
     <None Remove="MenuBackground\ecset2.png" />
     <None Remove="MenuBackground\Kunai5.png" />
@@ -456,6 +461,21 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Stand\stand3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Water\water1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Water\water2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Water\water3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Water\water4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Water\water9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="MenuBackground\ecset1.png">

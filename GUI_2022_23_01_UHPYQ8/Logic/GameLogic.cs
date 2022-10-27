@@ -620,6 +620,30 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             }
 
         }
+        private void EnemyMove(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    EnemySprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Water", "water1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 3:
+                    EnemySprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Water", "water2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 5:
+                    EnemySprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Water", "water3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 7:
+                    EnemySprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Water", "water3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 9:
+                    EnemySprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Water", "water2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 12:
+                    EnemySprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Water", "water1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+            }
+        }
         public enum ControlKey
         {
             space,
