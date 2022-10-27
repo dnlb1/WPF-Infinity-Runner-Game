@@ -29,12 +29,14 @@ namespace GUI_2022_23_01_UHPYQ8
         SoundPlayer clicksound = new SoundPlayer(System.IO.Path.Combine("Music", "ClickSound.wav"));
         IName name;
         IGameLogic logic;
+        IScore ScoreService;
         DispatcherTimer dt;
         public Game(MainWindow w)
         {
             InitializeComponent();
             this.window = w;
             this.logic = new GameLogic();
+            this.ScoreService = new Score();
             this.name = new Name();
             menuGrid.Visibility = Visibility.Hidden;
         }
