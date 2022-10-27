@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,6 +22,7 @@ namespace GUI_2022_23_01_UHPYQ8
     public partial class Game : Page
     {
         MainWindow window;
+        SoundPlayer clicksound = new SoundPlayer(System.IO.Path.Combine("Music", "ClickSound.wav"));
         public Game(MainWindow w)
         {
             InitializeComponent();
@@ -68,15 +70,22 @@ namespace GUI_2022_23_01_UHPYQ8
         }
         private void Button_Click(object sender, RoutedEventArgs e) //Vigyen vissza Main-ba
         {
-           
+            window.GoBackToStartPage();
         }
         private void Button_Click_1(object sender, RoutedEventArgs e) //Resume 
         {
-           
+            menuGrid.Visibility = Visibility.Hidden;
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-           
+            if (window.WindowState == WindowState.Maximized)
+            {
+                window.WindowState = WindowState.Normal;
+            }
+            else
+            {
+                window.WindowState = WindowState.Maximized;
+            }
         }
         private void Volume_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
