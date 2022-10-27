@@ -56,8 +56,9 @@ namespace GUI_2022_23_01_UHPYQ8
                     Player ActualPlayer = new Player()
                     {
                         Name = logic.Name,
-                        Score = logic.score ///////
+                        Score = logic.score
                     };
+                    ScoreService.GameOver(ActualPlayer);
                     logic.MainMusic.Stop();
                     window.GoBackToStartPage();
                 }
