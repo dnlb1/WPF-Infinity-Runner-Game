@@ -12,6 +12,7 @@
       Loaded="Page_Loaded"
       KeyDown="Page_KeyDown"
       KeyUp="Page_KeyUp"
+      Cursor="Cursors/minato_normal_select_animated.ani"
       >
     <Page.Resources>
         <FontFamily x:Key="naruto" >/Fonts/#Ninja Naruto</FontFamily>
