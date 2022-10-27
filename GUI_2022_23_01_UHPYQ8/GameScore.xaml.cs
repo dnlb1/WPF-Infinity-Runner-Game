@@ -1,4 +1,5 @@
 ﻿using GUI_2022_23_01_UHPYQ8.Model;
+using GUI_2022_23_01_UHPYQ8.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,9 +21,14 @@ namespace GUI_2022_23_01_UHPYQ8
     /// </summary>
     public partial class GameScore : Window
     {
+        Player py;
         public GameScore(Player py)
         {
             InitializeComponent();
+            var vm = new GameScoreViewModel();
+            this.py = py;
+            vm.SetUp(py);
+            this.DataContext = vm;
         }
     }
 }
