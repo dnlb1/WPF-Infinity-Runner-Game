@@ -41,12 +41,6 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public MediaPlayer HurtMadara { get; set; } = new MediaPlayer();
 
         public event EventHandler Changed; //változott a background. akkor ÚJRA RAJZOLUNK
-
-
-
-
-
-
         public enum ControlKey
         {
             space,
@@ -79,6 +73,12 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
                     break;
             }
         }
+
+        public void GameEngine()
+        {
+
+        }
+
 
     }
 }
