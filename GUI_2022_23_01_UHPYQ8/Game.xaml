@@ -62,6 +62,11 @@
                             <ColumnDefinition Width="32*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Image Grid.Column="1" Source="Images/MainMenuHud/volumeoff.png" MouseLeftButtonDown="Image_MouseLeftButtonDown"></Image>
+                        <Slider Grid.Column="2" x:Name="Volume" IsSnapToTickEnabled="True" VerticalAlignment="Center"  Maximum="100" Minimum="0" Value="40" ValueChanged="Volume_ValueChanged" Margin="10">
+                            <Slider.Background>
+                                <SolidColorBrush Opacity="0.2" Color="#FF211B1B"></SolidColorBrush>
+                            </Slider.Background>
+                        </Slider>
                     </Grid>
                 </Grid>
             </Grid>
