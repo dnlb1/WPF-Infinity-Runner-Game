@@ -884,19 +884,59 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             switch (key)
             {
                 case ControlKey.space:
-                   
+                    if (down == false && IsStanding) //ide még kell, hogy leért -e a foldre KOORDINATA
+                    {
+                        if (!IsSkilledOne && !GoAfterSkill && !EscON && !IsInForm && !canjump)
+                        {
+                            jumping = true;
+                            playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Jump", "jump1.png"), UriKind.RelativeOrAbsolute)));
+                        }
+                    }
                     break;
                 case ControlKey.skillone:
-                    
+                    if (IsStanding && !jumping && !down) //ha már nem állok - enter után és 
+                    {
+                        IsSkilledOne = true;
+                        Katon = true;
+                    }
                     break;
                 case ControlKey.enter:
-                    
+                    if (Intro)
+                    {
+                        if (!EscON)
+                        {
+                            IsStanding = true;
+                            BonusMana.Start();
+                            ManaMove(r.Next(1, 6));
+                        }
+                    }
+                    else
+                    {
+                        if (!EscON)
+                        {
+                            IntroMedia.Stop();
+                            Intro = true;
+                        }
+                    }
                     break;
                 case ControlKey.esc:
-                   
+                    if (EscON)
+                    {
+                        EscON = false;
+                    }
+                    else
+                    {
+                        EscON = true;
+                    }
                     break;
                 case ControlKey.skilltwo:
-                    
+                    if (Once && IsStanding && mana == 5 && !jumping && !down)
+                    {
+                        mana = 0;
+                        IsSkilledTwo = true;
+                        Susano.Play();
+
+                    }
                     break;
 
                 default:
