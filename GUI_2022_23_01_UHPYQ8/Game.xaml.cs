@@ -1,4 +1,5 @@
-﻿using GUI_2022_23_01_UHPYQ8.Service;
+﻿using GUI_2022_23_01_UHPYQ8.Logic;
+using GUI_2022_23_01_UHPYQ8.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,11 +27,13 @@ namespace GUI_2022_23_01_UHPYQ8
         MainWindow window;
         SoundPlayer clicksound = new SoundPlayer(System.IO.Path.Combine("Music", "ClickSound.wav"));
         IName name;
+        IGameLogic logic;
         DispatcherTimer dt;
         public Game(MainWindow w)
         {
             InitializeComponent();
             this.window = w;
+            this.logic = new GameLogic();
             this.name = new Name();
             menuGrid.Visibility = Visibility.Hidden;
         }
