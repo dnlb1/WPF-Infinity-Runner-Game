@@ -36,6 +36,10 @@
     <None Remove="Images\HpBar\manabar3.png" />
     <None Remove="Images\HpBar\manabar4.png" />
     <None Remove="Images\HpBar\manabar5.png" />
+    <None Remove="Images\Jump\jump0.png" />
+    <None Remove="Images\Jump\jump1.png" />
+    <None Remove="Images\Jump\jump2.png" />
+    <None Remove="Images\Jump\jump3.png" />
     <None Remove="Images\Jutsu\jutsu1.png" />
     <None Remove="Images\Jutsu\Jutsu2.png" />
     <None Remove="Images\Jutsu\jutsuhit.png" />
@@ -230,6 +234,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\HpBar\manabar4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Jump\jump0.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Jump\jump1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Jump\jump2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Jump\jump3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Jutsu\jutsu1.png">
