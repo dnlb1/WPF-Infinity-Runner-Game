@@ -98,6 +98,27 @@
                     <Label Content="Your Name" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="{StaticResource naruto}" Foreground="#FF151515"></Label>
                 </Viewbox>
             </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                    <ColumnDefinition Width="3.2*"></ColumnDefinition>
+                    <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Viewbox Grid.Row="1" Grid.Column="1">
+                    <TextBox Text="{Binding EnteredName, UpdateSourceTrigger=PropertyChanged}" Width="60"
+                         FontFamily="{StaticResource naruto}" Cursor="Cursors/Brush.ani">
+                        <TextBox.Background>
+                            <ImageBrush></ImageBrush>
+                        </TextBox.Background>
+                    </TextBox>
+                </Viewbox>
+            </Grid>
+            
         </Grid>
     </Grid>
 </Window>
