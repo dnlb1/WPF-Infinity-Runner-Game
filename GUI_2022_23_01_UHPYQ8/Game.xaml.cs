@@ -135,6 +135,10 @@ namespace GUI_2022_23_01_UHPYQ8
         private void Button_Click(object sender, RoutedEventArgs e) //Vigyen vissza Main-ba
         {
             clicksound.Play();
+            logic.MainMusic.Stop(); 
+            logic.IntroMedia.Stop(); 
+            logic.WaterSound.Stop(); 
+            logic.KatonFireStyle.Stop(); 
             dt.Stop(); 
             window.GoBackToStartPage();
         }
