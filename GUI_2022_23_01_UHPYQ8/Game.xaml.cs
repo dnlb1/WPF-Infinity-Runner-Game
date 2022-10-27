@@ -118,7 +118,10 @@ namespace GUI_2022_23_01_UHPYQ8
 
         private void Page_KeyUp(object sender, KeyEventArgs e)
         {
-
+            if (e.Key == Key.Space)
+            {
+                logic.Control(GameLogic.ControlKey.space);
+            }
         }
 
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
