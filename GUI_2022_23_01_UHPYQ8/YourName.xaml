@@ -179,7 +179,7 @@
                     <ColumnDefinition Width="3.2*"></ColumnDefinition>
                     <ColumnDefinition Width="1.1*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="1"  Command="{Binding Ok}" BorderThickness="0" BorderBrush="Transparent" Cursor="Cursors/Brush.ani"></Button>
+                <Button Grid.Column="1" Style="{DynamicResource EcsetButton}" Command="{Binding Ok}" BorderThickness="0" BorderBrush="Transparent" Cursor="Cursors/Brush.ani"></Button>
             </Grid>
         </Grid>
     </Grid>
