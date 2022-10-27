@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 
 namespace GUI_2022_23_01_UHPYQ8.Logic
 {
-    public class GameLogic
+    public class GameLogic : IGameLogic
     {
         Size size;
         public void Resize(Size size)
