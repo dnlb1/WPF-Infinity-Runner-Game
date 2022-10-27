@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -26,6 +27,29 @@ namespace GUI_2022_23_01_UHPYQ8.Render
         {
             this.size = size;
             InvalidateVisual();
+        }
+        public static bool IsInDesign
+        {
+            get
+            {
+                var prop = DesignerProperties.IsInDesignModeProperty;
+                return (bool)DependencyPropertyDescriptor.FromProperty(prop, typeof(FrameworkElement)).Metadata.DefaultValue;
+            }
+        }
+        protected override void OnRender(DrawingContext drawingContext)
+        {
+            base.OnRender(drawingContext);
+
+            if (!IsInDesign)
+            {
+                if (!(player.Position > TimeSpan.Zero))
+                {
+                    MediaTimeline timeline = new MediaTimeline(new Uri(Path.Combine("Music", "ListMusic.wav"), UriKind.RelativeOrAbsolute));
+                    timeline.RepeatBehavior = System.Windows.Media.Animation.RepeatBehavior.Forever;
+                    MediaClock clock = timeline.CreateClock();
+                    player.Clock = clock;
+                }                
+            }
         }
     }
 }
