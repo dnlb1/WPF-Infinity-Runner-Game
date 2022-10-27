@@ -150,6 +150,24 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public void Resize(Size size)
         {
             this.size = size;
+            Y = size.Height / 2;
+            X = 50;
+            groundheight = size.Height / 2 * 1.5;
+
+            ObstacleX = size.Width * 1.5;
+            ObstacleY = size.Height / 2 * 1.2;
+
+            ManaX = size.Width * 1.5;
+            ManaY = size.Height / 2 * 1.2;
+
+            SkillShootX = size.Width / 6;
+            SkillShootY = size.Height / 4 * 1.59;
+
+            old_skillx = size.Width / 6;
+            old_skilly = size.Height / 4 * 1.59;
+
+            EnemyX = size.Width * 1.45;
+            EnemyY = size.Height / 8.2;
         }
         Random r { get; set; } = new Random();
         public ImageBrush Background
