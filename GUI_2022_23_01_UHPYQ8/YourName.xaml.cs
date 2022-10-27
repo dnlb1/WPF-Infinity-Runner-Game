@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUI_2022_23_01_UHPYQ8.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace GUI_2022_23_01_UHPYQ8
     /// </summary>
     public partial class YourName : Window
     {
+        public NameWindowViewModel VMName { get; set; }
         public YourName()
         {
             InitializeComponent();
