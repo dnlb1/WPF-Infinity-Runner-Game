@@ -13,7 +13,10 @@
     <Page.DataContext>
         <ViewModel:HighscoreViewModel></ViewModel:HighscoreViewModel>
     </Page.DataContext>
-    <Grid x:Name="myGrid">
+    <Page.Resources>
+        <ImageBrush x:Key="MenuExit" ImageSource="MenuBackground/Kunai5.png" ></ImageBrush>
+    </Page.Resources>
+        <Grid x:Name="myGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="80*"/>
             <RowDefinition Height="10*"/>
