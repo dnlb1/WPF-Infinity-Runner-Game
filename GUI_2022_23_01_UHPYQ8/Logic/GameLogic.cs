@@ -17,6 +17,20 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public GameLogic()
         {
 
+            timer = new System.Timers.Timer();
+            timer.Interval = 15000; //15mpig lehetsz a formában. Villogás, hogyha kezd lejárni
+            timer.Elapsed += Timer_Elapsed;
+
+            Delay = new System.Timers.Timer();
+            Delay.Interval = 12000;
+            Delay.Elapsed += Delay_Elapsed;
+
+            BonusMana = new System.Timers.Timer();
+            BonusMana.Interval = 1000; //10mp
+            //10mp-nként van 50% esélye, hogy spawnol
+            BonusMana.Elapsed += SpawnMana;
+
+
             Intro = false;
             EscON = false;
 
@@ -34,7 +48,15 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             IntroMedia.Open(new Uri(System.IO.Path.Combine("Videos", "Intro.mp4"), UriKind.RelativeOrAbsolute));
             IntroMedia.MediaEnded += IntroMedia_MediaEnded;
         }
-
+        private void SpawnMana(object sender, System.Timers.ElapsedEventArgs e)
+        {
+        }
+        private void Delay_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+        }
+        private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+        }
         private void HurtMadara_MediaEnded(object sender, EventArgs e)
         {
             HurtMadara.Stop();
@@ -75,6 +97,16 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public MediaPlayer HurtMadara { get; set; } = new MediaPlayer();
 
         public event EventHandler Changed; //változott a background. akkor ÚJRA RAJZOLUNK
+        System.Timers.Timer timer;
+        System.Timers.Timer BonusMana;
+        System.Timers.Timer Delay;
+
+
+
+
+
+
+
         public enum ControlKey
         {
             space,
