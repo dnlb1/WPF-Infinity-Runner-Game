@@ -12,8 +12,10 @@
       Loaded="Page_Loaded"
       KeyDown="Page_KeyDown"
       KeyUp="Page_KeyUp"
-      
       >
+    <Page.Resources>
+        <FontFamily x:Key="naruto" >/Fonts/#Ninja Naruto</FontFamily>
+    </Page.Resources>
 
     <Grid x:Name="myGrid">
         <Grid.RowDefinitions>
@@ -39,6 +41,7 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="Images/MainMenuHud/MenuBack.png"></ImageBrush>
                 </Grid.Background>
+                
             </Grid>
         </Grid>
     </Grid>
