@@ -24,6 +24,11 @@ namespace GUI_2022_23_01_UHPYQ8
         public Highscore(MainWindow window)
         {
             InitializeComponent();
+            this.window = window;
+            if (myDisplay.player != null)
+            {
+                myDisplay.player.Volume = window.volume;
+            }
         }
 
         private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
