@@ -41,5 +41,17 @@
         <Viewbox  Grid.Row="1" Grid.Column="1" >
             <Label x:Name="Score" Content="{Binding py.Score,UpdateSourceTrigger=PropertyChanged}" ContentStringFormat="Score: {0}" VerticalAlignment="Center" FontSize="30" FontFamily="{StaticResource naruto}"></Label>
         </Viewbox>
+        <Grid Grid.Column="1" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+                <ColumnDefinition Width="80*"></ColumnDefinition>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="ExitButton" Grid.Column="1" Grid.Row="3" BorderBrush="Transparent" BorderThickness="0" Click="ExitButton_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Menubackground/ecset2.png"></ImageBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
     </Grid>
 </Window>
