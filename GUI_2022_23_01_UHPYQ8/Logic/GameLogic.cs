@@ -468,6 +468,44 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             }
 
         } //SkillTwo
+        public void InForm(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Susano", "1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 3:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Susano", "2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 5:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Susano", "3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 7:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Susano", "4.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 9:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Susano", "5.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 10:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Susano", "6.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 12:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Susano", "7.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 13:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Susano", "8.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 15:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Susano", "9.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 16:
+                    playerSprite = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/Run/Susano", "10.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+
+            }
+
+        } //SkillTwo
 
         public enum ControlKey
         {
