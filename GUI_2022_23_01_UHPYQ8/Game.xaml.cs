@@ -25,5 +25,25 @@ namespace GUI_2022_23_01_UHPYQ8
         {
             InitializeComponent();
         }
+
+        private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Page_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void Page_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
     }
 }
