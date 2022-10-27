@@ -28,7 +28,19 @@ namespace GUI_2022_23_01_UHPYQ8
 
         private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-
+            if (window.WindowState == WindowState.Maximized)
+            {
+                ResumeButton.Margin = new Thickness(400, 10, 400, 10);
+                ExitButton.Margin = new Thickness(400, 10, 400, 10);
+                WindowModeButton.Margin = new Thickness(100, 10, 100, 10);
+            }
+            if (window.WindowState != WindowState.Maximized)
+            {
+                ExitButton.Margin = new Thickness(150, 10, 150, 10);
+                ResumeButton.Margin = new Thickness(150, 10, 150, 10);
+                WindowModeButton.Margin = new Thickness(40, 10, 40, 10);
+            }
+            myDisplay.Resize(new Size(myGrid.ActualWidth, myGrid.ActualHeight));
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
