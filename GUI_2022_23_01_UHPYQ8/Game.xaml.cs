@@ -138,7 +138,15 @@ namespace GUI_2022_23_01_UHPYQ8
         }
         private void Image_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
         {
-            
+            if (logic != null)
+            {
+                Volume.Value = 100;
+                logic.MainMusic.Volume = 0.5;
+                logic.WaterSound.Volume = 1;
+                logic.KatonFireStyle.Volume = 1;
+                logic.IntroMedia.Volume = 1;
+                logic.HurtMadara.Volume = 1;
+            }
         }
         private void Button_Click(object sender, RoutedEventArgs e) //Vigyen vissza Main-ba
         {
