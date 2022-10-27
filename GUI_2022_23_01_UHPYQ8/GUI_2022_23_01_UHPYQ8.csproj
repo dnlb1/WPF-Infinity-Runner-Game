@@ -45,6 +45,16 @@
     <None Remove="Images\MainMenuHud\volumeon.png" />
     <None Remove="Images\MainMenuHud\windowmode2.png" />
     <None Remove="Images\MainMenuHud\windowmodewhite.png" />
+    <None Remove="Images\PressEnter\press1.png" />
+    <None Remove="Images\PressEnter\press10.png" />
+    <None Remove="Images\PressEnter\press2.png" />
+    <None Remove="Images\PressEnter\press3.png" />
+    <None Remove="Images\PressEnter\press4.png" />
+    <None Remove="Images\PressEnter\press5.png" />
+    <None Remove="Images\PressEnter\press6.png" />
+    <None Remove="Images\PressEnter\press7.png" />
+    <None Remove="Images\PressEnter\press8.png" />
+    <None Remove="Images\PressEnter\press9.png" />
     <None Remove="Images\Run\1.png" />
     <None Remove="Images\Run\2.png" />
     <None Remove="Images\Run\3.png" />
@@ -192,6 +202,36 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\MainMenuHud\windowmodewhite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PressEnter\press1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PressEnter\press10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PressEnter\press2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PressEnter\press3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PressEnter\press4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PressEnter\press5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PressEnter\press6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PressEnter\press7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PressEnter\press8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\PressEnter\press9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Run\1.png">

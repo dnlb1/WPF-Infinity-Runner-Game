@@ -343,6 +343,44 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             }
 
         }
+        public void PressEnterI(double i)
+        {
+            switch (i)
+            {
+                case 1:
+                    PressStart = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/PressEnter", "press1.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 7:
+                    PressStart = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/PressEnter", "press2.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 14:
+                    PressStart = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/PressEnter", "press3.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 21:
+                    PressStart = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/PressEnter", "press4.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 28:
+                    PressStart = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/PressEnter", "press5.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 35:
+                    PressStart = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/PressEnter", "press6.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 42:
+                    PressStart = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/PressEnter", "press7.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 49:
+                    PressStart = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/PressEnter", "press8.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 56:
+                    PressStart = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/PressEnter", "press9.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+                case 63:
+                    PressStart = new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images/PressEnter", "press10.png"), UriKind.RelativeOrAbsolute)));
+                    break;
+
+            }
+
+        }
 
         public enum ControlKey
         {
