@@ -90,7 +90,30 @@ namespace GUI_2022_23_01_UHPYQ8
 
         private void Page_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.Key == Key.Enter)
+            {
+                logic.Control(GameLogic.ControlKey.enter);
+            }
+            else if (e.Key == Key.D1)
+            {
+                logic.Control(GameLogic.ControlKey.skillone);
+            }
+            else if (e.Key == Key.Escape)
+            {
+                logic.Control(GameLogic.ControlKey.esc);
+                if (menuGrid.Visibility == Visibility.Hidden)
+                {
+                    menuGrid.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    menuGrid.Visibility = Visibility.Hidden;
+                }
+            }
+            else if (e.Key == Key.D2)
+            {
+                logic.Control(GameLogic.ControlKey.skilltwo);
+            }
         }
 
         private void Page_KeyUp(object sender, KeyEventArgs e)
