@@ -44,10 +44,10 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         ImageBrush MadaraDead { get; set; }
         MediaPlayer MainMusic { get; set; }
         MediaPlayer HurtMadara { get; set; }
-        MediaPlayer Susano { get; set; }
         MediaPlayer WaterSound { get; set; }
         MediaPlayer KatonFireStyle { get; set; }
         MediaPlayer IntroMedia { get; set; }
+        MediaPlayer Susano { get; set; }
         ImageBrush SkillDead { get; set; }
         ImageBrush Mana { get; set; }
         double SkillShootX { get; set; }
