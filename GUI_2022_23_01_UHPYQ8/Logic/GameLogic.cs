@@ -55,7 +55,7 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             DisapearMana = false;
             ChaningBack = false;
 
-            hp = 2;
+            hp = 5;
             mana = 0;
             force = 20;
             speed = 10;
