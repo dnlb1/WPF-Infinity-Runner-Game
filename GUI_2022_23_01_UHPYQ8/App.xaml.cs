@@ -1,4 +1,8 @@
-﻿using System;
+﻿using GUI_2022_23_01_UHPYQ8.Logic;
+using GUI_2022_23_01_UHPYQ8.Service;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Toolkit.Mvvm.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +17,13 @@ namespace GUI_2022_23_01_UHPYQ8
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            Ioc.Default.ConfigureServices(new ServiceCollection().
+                AddTransient<IGameLogic, GameLogic>()
+                .AddTransient<IScore, Score>().
+                AddTransient<IName, Name>().
+                BuildServiceProvider());
+        }
     }
 }
