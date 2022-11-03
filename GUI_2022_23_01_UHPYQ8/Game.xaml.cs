@@ -1,10 +1,8 @@
 ﻿using GUI_2022_23_01_UHPYQ8.Logic;
 using GUI_2022_23_01_UHPYQ8.Model;
 using GUI_2022_23_01_UHPYQ8.Service;
-using Microsoft.Toolkit.Mvvm.DependencyInjection;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Media;
 using System.Text;
@@ -33,26 +31,14 @@ namespace GUI_2022_23_01_UHPYQ8
         IGameLogic logic;
         IScore ScoreService;
         DispatcherTimer dt;
-        public static bool IsInDesign
-        {
-            get
-            {
-                var prop = DesignerProperties.IsInDesignModeProperty;
-                return (bool)DependencyPropertyDescriptor.FromProperty(prop, typeof(FrameworkElement)).Metadata.DefaultValue;
-            }
-        }
-        public Game(MainWindow w) : this(IsInDesign ? null : Ioc.Default.GetService<IGameLogic>(), Ioc.Default.GetService<IScore>(), Ioc.Default.GetService<IName>(), w)
+        public Game(MainWindow w)
         {
             InitializeComponent();
-        }
-        public Game(IGameLogic logic, IScore ScoreService, IName name, MainWindow w)
-        {
-            InitializeComponent();
-            this.name = name;
-            this.logic = logic;
-            this.ScoreService = ScoreService;
-            menuGrid.Visibility = Visibility.Hidden;
             this.window = w;
+            this.logic = new GameLogic();
+            this.ScoreService = new Score();
+            this.name = new Name();
+            menuGrid.Visibility = Visibility.Hidden;
         }
 
         private void Engine(object sender, EventArgs e)

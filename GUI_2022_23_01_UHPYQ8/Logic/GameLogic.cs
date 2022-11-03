@@ -55,7 +55,7 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             DisapearMana = false;
             ChaningBack = false;
 
-            hp = 5;
+            hp = 2;
             mana = 0;
             force = 20;
             speed = 10;
@@ -84,6 +84,7 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             HurtMadara.Volume = 0.9;
             IntroMedia.Open(new Uri(System.IO.Path.Combine("Videos", "Intro.mp4"), UriKind.RelativeOrAbsolute));
             IntroMedia.MediaEnded += IntroMedia_MediaEnded;
+
         }
         private void SpawnMana(object sender, System.Timers.ElapsedEventArgs e)
         {
