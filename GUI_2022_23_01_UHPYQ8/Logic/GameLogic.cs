@@ -77,7 +77,7 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
             Susano.MediaEnded += Susano_MediaEnded;
             //Susano1.MediaEnded += Susano1_MediaEnded;
 
-          
+            WoodStyle.Open(new Uri(System.IO.Path.Combine("Music", "WoodStyle.mp3"), UriKind.RelativeOrAbsolute));
             Susano.Open(new Uri(System.IO.Path.Combine("Music", "Susano.mp3"), UriKind.RelativeOrAbsolute));
             MainMusic.Open(new Uri(System.IO.Path.Combine("Music", "MainGameTheme.wav"), UriKind.RelativeOrAbsolute));
             HurtMadara.Open(new Uri(System.IO.Path.Combine("Music", "hurtmadara.wav"), UriKind.RelativeOrAbsolute));
@@ -197,6 +197,7 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
         public MediaPlayer KatonFireStyle { get; set; } = new MediaPlayer();
         public MediaPlayer Susano { get; set; } = new MediaPlayer();
         public MediaPlayer HurtMadara { get; set; } = new MediaPlayer();
+        public MediaPlayer WoodStyle { get; set; } = new MediaPlayer();
         Size size;
         public event EventHandler Changed; //változott a background. akkor ÚJRA RAJZOLUNK
         System.Timers.Timer timer;
@@ -1256,6 +1257,10 @@ namespace GUI_2022_23_01_UHPYQ8.Logic
                 else
                 {
                     TimeLimit += 1;
+                    if (TimeLimit == 7)
+                    {
+                        WoodStyle.Play();
+                    }
                 }
             }
             Changed?.Invoke(this, null);

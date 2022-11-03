@@ -153,6 +153,7 @@
     <None Remove="Music\MainGameTheme.wav" />
     <None Remove="Music\Susano.mp3" />
     <None Remove="Music\Water.wav" />
+    <None Remove="Music\WoodStyle.mp3" />
     <None Remove="RankList\Rank.txt" />
     <None Remove="Videos\Goakyou.mp4" />
     <None Remove="Videos\Intro.mp4" />
@@ -573,6 +574,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Music\Water.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\WoodStyle.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="RankList\Rank.txt">
