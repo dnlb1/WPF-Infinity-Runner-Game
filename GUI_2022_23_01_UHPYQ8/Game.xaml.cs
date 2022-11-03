@@ -152,6 +152,7 @@ namespace GUI_2022_23_01_UHPYQ8
                 logic.KatonFireStyle.Volume = 0;
                 logic.IntroMedia.Volume = 0;
                 logic.HurtMadara.Volume = 0;
+                logic.Susano.Volume = 0;
             }
         }
         private void Image_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
@@ -164,6 +165,7 @@ namespace GUI_2022_23_01_UHPYQ8
                 logic.KatonFireStyle.Volume = 1;
                 logic.IntroMedia.Volume = 1;
                 logic.HurtMadara.Volume = 1;
+                logic.Susano.Volume = 1;
             }
         }
         private void Button_Click(object sender, RoutedEventArgs e) //Vigyen vissza Main-ba
@@ -195,12 +197,13 @@ namespace GUI_2022_23_01_UHPYQ8
         private void Volume_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             if (logic != null)
-            {
+            {         
                 logic.MainMusic.Volume = (Volume.Value / 100) / 2;
                 logic.WaterSound.Volume = Volume.Value / 100;
                 logic.KatonFireStyle.Volume = Volume.Value / 100;
                 logic.IntroMedia.Volume = Volume.Value / 100;
                 logic.HurtMadara.Volume = Volume.Value / 100;
+                logic.Susano.Volume = Volume.Value / 100;
             }
         }
     }
